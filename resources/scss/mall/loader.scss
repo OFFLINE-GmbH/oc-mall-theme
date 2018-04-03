@@ -1,0 +1,16 @@
+.mall-loader {
+    background: rgba(255, 255, 255, .8);
+    z-index: 10000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: wait;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    min-height: 400px;
+}

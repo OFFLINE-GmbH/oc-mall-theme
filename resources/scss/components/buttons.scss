@@ -1,0 +1,31 @@
+.mall-btn {
+    @apply .text-sm .inline .bg-white .text-grey-darkest .py-3 .px-6 .border .border-grey-light .rounded .shadow .text-center .cursor-pointer .no-underline;
+    &:hover {
+        @apply .bg-grey-lighter;
+    }
+    &--primary {
+        @apply .bg-primary .border-primary-light .text-white;
+        &:hover {
+            @apply .bg-primary-light;
+        }
+    }
+    &--secondary {
+        @apply .bg-secondary .border-secondary-light .text-white;
+        &:hover {
+            @apply .bg-secondary-light;
+        }
+    }
+    &--link {
+        @apply .inline-block .align-baseline .font-bold .text-sm .text-blue .p-0 .shadow-none .border-0;
+        &:hover {
+            @apply .text-blue-darker .bg-transparent;
+        }
+    }
+    &--full {
+        @apply .w-full;
+    }
+    &--sm {
+        @apply .py-2 .px-4 .text-xs;
+    }
+}
+

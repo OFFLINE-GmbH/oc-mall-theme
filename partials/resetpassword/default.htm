@@ -1,0 +1,11 @@
+<div class="w-1/2 m-auto">
+    <h2>{{ 'mall.password_reset.heading' | _ }}</h2>
+
+    <div id="partialUserResetForm">
+        {% if __SELF__.code == null %}
+            {% partial __SELF__ ~ '::restore' %}
+        {% else %}
+            {% partial __SELF__ ~ '::reset' %}
+        {% endif %}
+    </div>
+</div>

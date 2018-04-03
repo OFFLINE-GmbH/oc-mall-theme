@@ -1,0 +1,17 @@
+title = "Cart"
+url = "/cart"
+layout = "default"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/cart"
+==
+{% component 'cart' %}
+
+{% if cart.products.count > 0 %}
+    <div class="mall-cart-actions">
+        <a href="{{ 'checkout' | page }}" class="mall-btn mall-btn--primary">
+            {{ 'mall.checkout.begin' | _ }}
+        </a>
+    </div>
+{% endif %}

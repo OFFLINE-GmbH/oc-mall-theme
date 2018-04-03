@@ -1,0 +1,66 @@
+.mall-category-filter {
+    @apply .pr-8;
+    .mall-property {
+        @apply .mb-4;
+        min-height: 100px;
+        &__label {
+            @apply .border-b .border-smoke .font-bold .text-sm .pb-1 .mb-4;
+        }
+        &__filter {
+            @apply .border-b .border-primary .font-bold .text-sm .pb-1 .mb-8;
+        }
+        &__clear-filter {
+            @apply .float-right .text-xs .font-normal .text-grey .no-underline;
+        }
+    }
+    .mall-filter {
+        @apply .flex .flex-wrap;
+        &__option {
+            @apply .p-2 .mr-2 .mb-2 .bg-smoke .cursor-pointer .text-center;
+            min-width: 40px;
+            &--selected {
+                @apply .bg-primary .text-white;
+            }
+        }
+    }
+    .noUi {
+        &-connect {
+            @apply .bg-primary;
+        }
+        &-horizontal {
+            height: 10px;
+            .noUi-handle {
+                width: 25px;
+                height: 20px;
+                right: -13px !important;
+            }
+            .noUi-handle:before {
+                height: 10px;
+                left: 10px;
+                top: 4px;
+            }
+            .noUi-handle:after {
+                height: 10px;
+                left: 12px;
+                top: 4px;
+            }
+        }
+        &-target {
+            font-size: .7rem;
+            margin-bottom: 3rem;
+        }
+        &-marker-horizontal {
+            width: 1px;
+            height: 4px;
+            &.noUi-marker-large {
+                height: 8px;
+            }
+        }
+        &-value {
+            top: 15px;
+        }
+        &-pips-horizontal {
+            height: 50px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<p class="mb-8">
+    {{ 'mall.password_reset.lead_check' | _ }}
+</p>
+<form
+        data-request="{{ __SELF__ }}::onResetPassword"
+        data-request-update="'{{ __SELF__ }}::complete': '#partialUserResetForm'">
+    <div class="mall-form-control">
+        <label for="resetCode">{{ 'mall.password_reset.activation_code' | _ }}</label>
+        <input name="code" type="text" class="form-control" id="resetCode" value="{{ __SELF__.code }}">
+    </div>
+
+    <div class="mall-form-control">
+        <label for="resetPassword">{{ 'mall.password_reset.new_password' | _ }}</label>
+        <input name="password" type="password" class="form-control" id="resetPassword">
+    </div>
+
+    <button type="submit" class="mall-btn mall-btn--primary">{{ 'mall.password_reset.reset' | _ }}</button>
+</form>

@@ -1,0 +1,63 @@
+.mall-product {
+    @apply .flex;
+    &__info {
+        @apply .w-3/5 .pr-8;
+    }
+    &__images {
+        @apply .flex .flex-wrap;
+    }
+    &__image {
+        @apply .border-2 .border-grey-light .mr-4 .mb-4 .p-2;
+        width: calc(100% / 3 - 1rem);
+        &:nth-child(3n) {
+            @apply .mr-0;
+        }
+        img {
+            @apply .block;
+        }
+    }
+    &__cart {
+        @apply .w-1/4 .pl-8 .ml-auto;
+    }
+    &__variants {
+        @apply .flex .mb-8;
+    }
+    &__variants-heading {
+        @apply .mb-4;
+    }
+    &__variant-properties {
+        @apply .mb-8;
+    }
+    &__custom-fields {
+        @apply .mb-8;
+        .mall-field-selector {
+            @apply .border-2 .border-grey-light .inline-block;
+            &.is-active {
+                @apply .border-grey-dark .shadow;
+            }
+            img {
+                display: block;
+            }
+        }
+    }
+    &__current-price {
+        @apply .text-2xl .font-bold .text-black;
+    }
+    &__old-price {
+        @apply .text-sm .font-bold .text-red .line-through .mb-1;
+    }
+    &__tax-info {
+        @apply .text-xs .text-grey .mt-2 .mb-4;
+    }
+    &__property-stock {
+        @apply .text-xs .mt-2 .mb-4 .text-grey;
+    }
+    &__add-to-cart-button button {
+        @apply .mall-btn .w-full .block .bg-blue .border-blue-dark .text-white .shadow-md .py-3 .text-base .mt-8 .uppercase .font-bold;
+        transition: .1s ease background;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+        &:hover {
+            background: lighten(#3490dc, 5);
+        }
+    }
+}

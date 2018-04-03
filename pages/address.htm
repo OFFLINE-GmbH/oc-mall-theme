@@ -1,0 +1,18 @@
+title = "Address"
+url = "/address/:address?/:redirect?/:set?"
+layout = "default"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/address/:address?/:redirect?/:set?"
+
+[session]
+security = "user"
+redirect = "home"
+
+[addressForm]
+address = "{{ :address }}"
+redirect = "{{ :redirect }}"
+set = "{{ :set }}"
+==
+{% component 'addressForm' %}

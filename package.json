@@ -1,0 +1,34 @@
+{
+  "name": "oc-mall-theme",
+  "version": "1.0.0",
+  "description": "Official starter theme for the Mall e-commerce plugin",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp-plumber": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.5.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "postcss": "^6.0.14",
+    "postcss-normalize.css": "^0.4.0",
+    "poststylus": "^1.0.0",
+    "tailwindcss": "^0.4.2",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tobias Kuendig <tobias@offline.swiss>",
+  "license": "MIT"
+}

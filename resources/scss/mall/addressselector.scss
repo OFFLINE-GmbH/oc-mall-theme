@@ -1,0 +1,8 @@
+.mall-address-selector {
+    label {
+        @apply .text-xs;
+    }
+    select {
+        @apply .mall-selectbox-sm .text-xs;
+    }
+}

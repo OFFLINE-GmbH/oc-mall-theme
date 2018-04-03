@@ -1,0 +1,16 @@
+.mall-pagination {
+    .pagination {
+        @apply .flex .list-reset .leading-none .justify-center;
+    }
+    span, a {
+        @apply .no-underline .p-2 .leading-none .inline-block .text-center .text-sm;
+        min-width: 30px;
+        min-height: 30px;
+    }
+    .disabled > a, .disabled > span {
+        @apply .text-grey-light;
+    }
+    .active > a, .active > span {
+        @apply .text-primary .bg-smoke .border-primary;
+    }
+}

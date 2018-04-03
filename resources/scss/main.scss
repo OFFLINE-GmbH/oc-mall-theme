@@ -1,0 +1,25 @@
+@tailwind preflight;
+
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/typography';
+@import 'components/tables';
+@import 'components/callouts';
+
+@import 'mall/cart';
+@import 'mall/cartsummary';
+@import 'mall/category';
+@import 'mall/categoryfilter';
+@import 'mall/loader';
+@import 'mall/pagination';
+@import 'mall/product';
+@import 'mall/signup';
+@import 'mall/paymentmethodselector';
+@import 'mall/shippingselector';
+@import 'mall/addressselector';
+@import 'mall/addresslist';
+@import 'mall/checkout';
+@import 'mall/myaccount';
+@import 'mall/orderslist';
+
+@tailwind utilities;

@@ -1,0 +1,20 @@
+{% for item in items if not item.viewBag.isHidden %}
+    <div class="block mt-4 lg:inline-block lg:mt-0 mr-8">
+        {% if item.url %}
+            <a role="presentation" href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }}
+               class="text-grey-dark no-underline hover:text-grey-darker
+            {{ item.isActive ? 'active' : '' }}
+            {{ item.isChildActive ? 'child-active' : '' }}
+            {{ item.viewBag.cssClass }}">
+                {{ item.title }}
+            </a>
+        {% else %}
+            <span class="text-grey-dark no-underline hover:text-grey-darker">{{ item.title }}</span>
+        {% endif %}
+        {% if item.items %}
+            <div>
+                {% partial __SELF__ ~ "::items" items=item.items %}
+            </div>
+        {% endif %}
+    </div>
+{% endfor %}

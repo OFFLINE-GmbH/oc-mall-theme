@@ -1,0 +1,87 @@
+.mall-selectbox {
+    @apply .appearance-none .bg-grey-lighter .border .border-grey-lighter .text-sm .text-grey-darker .py-3 .px-2 .pr-8 .rounded  .dropdown-pointer;
+}
+
+.mall-selectbox-sm {
+    @apply .mall-selectbox .py-1 .px-1 .pr-6 .dropdown-pointer;
+    background-size: 1.2em 1.2em;
+    background-position: right .75em top 50%;
+    min-width: 60px;
+}
+
+.mall-label {
+    @apply .block .uppercase .tracking-wide .text-grey-darker .text-xs .font-bold .mb-2;
+}
+
+.mall-input {
+    @apply .appearance-none .block .w-full .bg-grey-lighter .text-grey-darker .border .border-grey-lighter .rounded .py-3 .px-4 .mb-3;
+    &-sm {
+        @apply .py-2 .px-3;
+    }
+}
+
+.has-error .mall-input {
+    @apply .bg-red-lightest;
+}
+
+.has-error .mall-label {
+    @apply .text-red-dark;
+}
+
+[data-validate-for] {
+    @apply .text-red-dark .text-xs .ml-1 .mt-2;
+}
+
+.is-required label::after {
+    content: "*";
+    display: inline-block;
+    margin-left: 3px;
+    color: #ff0000;
+}
+
+.dropdown-pointer {
+    background-image: url('dropdown.svg');
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    background-position: right 1em top 50%;
+}
+
+.mall-form-control {
+    @apply .mb-6;
+    label {
+        @apply .mall-label;
+    }
+    input, textarea {
+        @apply .mall-input;
+    }
+    select {
+        @apply .mall-selectbox .w-full .cursor-pointer;
+    }
+}
+
+.mall-form-actions {
+    @apply .flex .items-center .justify-start .mt-6;
+    .mall-btn + .mall-btn {
+        @apply .ml-4;
+    }
+}
+
+.mall-two-fields {
+    @apply .flex;
+    > :first-child {
+        @apply .mr-2 .flex-grow;
+    }
+    > :last-child {
+        @apply .ml-2 .flex-grow;
+    }
+}
+
+.mall-checkbox {
+    @apply .block .text-grey-dark .font-bold;
+    > input {
+        @apply .mr-2;
+    }
+    > span {
+        @apply .text-sm;
+    }
+}

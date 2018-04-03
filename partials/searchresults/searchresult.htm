@@ -1,0 +1,10 @@
+<div class="flex mb-8 pb-8 border-b border-smoke-light">
+    {% if result.thumb %}
+        <div class="w-1/6">
+            {% partial __SELF__ ~ '::thumbnail' result = result %}
+        </div>
+    {% endif %}
+    <div class="{{ result.thumb ? 'w-5/6' : 'w-full' }}">
+        {% partial __SELF__ ~ '::content' result = result %}
+    </div>
+</div>

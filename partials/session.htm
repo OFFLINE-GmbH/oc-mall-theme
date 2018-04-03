@@ -1,0 +1,15 @@
+{% if user %}
+    {{ 'mall.session.logged_in' | _({email: user.email}) }}.
+    <span class="ml-4">
+        <a href="javascript:;" data-request="onLogout" data-request-data="redirect: '/'">
+            {{ 'mall.session.logout' | _ }}
+        </a>
+    </span>
+{% else %}
+    {{ 'mall.session.logged_out' | _ }}.
+    <span class="ml-4">
+        <a href="{{ '/login' | app }}">
+            {{ 'mall.session.login_signup' | _ }}
+        </a>
+    </span>
+{% endif %}

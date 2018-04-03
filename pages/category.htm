@@ -1,0 +1,26 @@
+title = "Category"
+url = "/category/:slug*"
+layout = "default"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/category/:slug*"
+
+[category]
+category = ":slug"
+product_page = "product.htm"
+show_variants = 1
+per_page = 9
+
+[categoryFilter]
+category = ":slug"
+showPriceFilter = 1
+==
+<div class="flex">
+    <div class="w-1/4">
+        {% component 'categoryFilter' %}
+    </div>
+    <div class="w-3/4">
+        {% component 'category' %}
+    </div>
+</div>

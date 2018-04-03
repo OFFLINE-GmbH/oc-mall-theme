@@ -1,0 +1,13 @@
+title = "Account"
+url = "/account/:page?"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[myAccount]
+page = "{{ :page }}"
+==
+{% component 'myAccount' %}

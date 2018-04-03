@@ -1,0 +1,7 @@
+{% if __SELF__.menuItems %}
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto py-4">
+        <div class="lg:flex-grow uppercase font-medium text-center">
+            {% partial __SELF__ ~ "::items" items=__SELF__.menuItems %}
+        </div>
+    </div>
+{% endif %}

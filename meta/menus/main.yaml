@@ -1,0 +1,37 @@
+name: Main
+items:
+    -
+        title: Homepage
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: ''
+        reference: index
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'All Categories'
+        nesting: ''
+        type: all-mall-categories
+        url: ''
+        code: ''
+        reference: ''
+        cmsPage: ''
+        replace: '1'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'All Static Pages'
+        type: all-static-pages
+        code: ''
+        replace: '1'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

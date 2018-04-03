@@ -1,0 +1,12 @@
+.mall-address-list {
+    &__actions {
+        @apply .block .my-4 .float-right;
+        margin-top: -3.4em;
+    }
+    &__table-actions {
+        @apply .text-right;
+        a {
+            @apply .mr-4;
+        }
+    }
+}

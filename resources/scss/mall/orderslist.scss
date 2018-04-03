@@ -1,0 +1,37 @@
+.mall-orders-list {
+    &__order {
+        @apply .cursor-pointer;
+        &:hover td {
+            @apply .bg-smoke-lightest;
+        }
+        &.is-open {
+            @apply .bg-smoke-light;
+        }
+    }
+    &__order--unpaid {
+        td {
+            @apply .bg-orange-lightest .text-orange-darkest;
+        }
+        &:hover td {
+            @apply .bg-orange-light;
+        }
+        a {
+            @apply .text-red-darkest;
+        }
+    }
+    &__details {
+        @apply .bg-smoke-light;
+    }
+}
+
+.mall-order-details {
+    &__row {
+        @apply .flex .mb-4;
+    }
+    &__detail {
+        @apply .w-1/2;
+    }
+    .mall-table td {
+        @apply .align-top;
+    }
+}

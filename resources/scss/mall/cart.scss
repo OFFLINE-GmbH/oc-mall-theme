@@ -1,0 +1,77 @@
+.mall-cart {
+    &__wrapper {
+        @apply .border-t .border-b .border-grey-light .overflow-hidden .relative;
+    }
+    &__table {
+        @apply .w-full .text-left;
+        border-collapse: collapse;
+    }
+    &__header th {
+        @apply .text-sm .font-semibold .text-grey-darker .p-2 .bg-grey-lightest;
+    }
+    &__product td {
+        @apply .p-2 .border-t .text-xs .whitespace-no-wrap .leading-normal;
+        &:first-child {
+            @apply .border-smoke .w-32;
+        }
+        .text-muted {
+            @apply .text-grey-dark;
+        }
+        a {
+            @apply .no-underline .text-grey-darkest;
+        }
+        .js-mall-remove-product {
+            @apply .underline .text-primary;
+        }
+    }
+    &__discount td,
+    &__shipping td {
+        @apply .p-2 .border-t .text-xs .whitespace-no-wrap;
+    }
+    &__taxes {
+        td {
+            @apply .p-2 .border-t .text-2xs .whitespace-no-wrap .text-grey-dark .border-smoke-light;
+        }
+        &--1 td {
+            @apply .border-smoke;
+        }
+    }
+    &__taxes-total td {
+        @apply .p-2 .border-t .text-2xs .whitespace-no-wrap .text-grey-dark .border-smoke;
+    }
+    &__total td {
+        @apply .p-2 .bg-grey-lightest .text-grey-darker .font-semibold .border-t .border-smoke .text-xs;
+    }
+    &__grand-total td {
+        @apply .p-2 .bg-grey-lightest .text-grey-darker .font-semibold .border-t .border-smoke .text-sm;
+    }
+    &__empty {
+        @apply .p-6 .bg-smoke-light .text-center .w-1/2 .m-auto;
+    }
+}
+
+.mall-cart-actions {
+    @apply .mt-8 .pt-8 .border-t .border-smoke-light .text-right;
+    .mall-btn {
+        @apply .text-base;
+    }
+}
+
+.mall-discount-applier {
+    @apply .mt-8 .w-full .flex .justify-end;
+    form {
+        @apply .w-1/2 .flex .items-end;
+    }
+    .mall-form-control {
+        @apply .flex-grow .mb-0;
+        input {
+            @apply .mb-0 .py-2 .text-sm;
+        }
+    }
+    .mall-btn {
+        @apply .flex-shrink .ml-2 .py-2;
+    }
+    [data-validate-for] {
+        @apply .absolute;
+    }
+}

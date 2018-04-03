@@ -1,0 +1,58 @@
+.mall-shipping-method {
+    @apply .mt-4;
+    &__entry {
+        @apply .flex .py-8 .relative .items-center .z-0 .border .border-smoke;
+        &--active {
+            @apply .bg-white .items-start .shadow-md .opacity-100 .z-10 .border .border-grey;
+            .mall-shipping-method__text {
+                @apply .opacity-100;
+            }
+        }
+    }
+    &__logo {
+        width: 180px;
+        @apply .flex .items-start .justify-center;
+        img {
+            @apply .w-auto .max-w-full .block;
+        }
+    }
+    &__text {
+        @apply .flex-1 .flex .items-center .opacity-50;
+    }
+    &__name {
+        @apply .font-bold;
+    }
+    &__description {
+        @apply .text-xs .leading-tight .mt-4;
+    }
+    &__meta {
+        @apply .text-sm .leading-normal .text-grey .mt-2;
+    }
+    &__selector {
+        width: 180px;
+        @apply .relative .z-20;
+    }
+    &__select-button {
+        @apply .float-right .mall-btn .mr-4 .whitespace-no-wrap;
+    }
+    &__submit {
+        @apply .mt-4;
+    }
+    .mall-form-control {
+        @apply .mb-2;
+    }
+    [data-validate-for] {
+        @apply .mb-4 .mt-0;
+    }
+    .mall-two-fields {
+        &--number-cvv {
+            @apply .flex;
+            .mall-form-control:first-child {
+                @apply .w-3/4;
+            }
+            .mall-form-control:last-child {
+                @apply .w-1/4;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+title = "Search results"
+url = "/suche"
+layout = "default"
+is_hidden = 0
+
+[searchResults]
+resultsPerPage = 8
+showProviderBadge = 1
+
+[viewBag]
+localeUrl[en] = "/search"
+==
+<div class="w-3/4 m-auto">
+    <h2 class="mb-8">{{ 'mall.search.heading' | _({query: searchResults.query}) }}</h2>
+
+    <div class="pt-8">
+        {% component 'searchResults' %}
+    </div>
+</div>

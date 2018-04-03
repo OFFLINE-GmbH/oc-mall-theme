@@ -1,0 +1,46 @@
+==
+function onStart() {
+    $this->page['query'] = input('q');
+}
+==
+<div class="top-bar bg-grey-lighter border-b border-grey-light py-1">
+    <div class="container mx-auto flex items-center text-xs text-grey-darkest">
+        <div class="w-1/2">
+            {% partial 'session' %}
+        </div>
+        <div class="w-1/2 text-right flex justify-end">
+            {% component 'currencyPicker' %}
+            {% component 'localePicker' %}
+        </div>
+    </div>
+</div>
+<header class="header py-8">
+    <div class="container mx-auto flex">
+        <div class="w-1/3">
+            <div>
+                <form action="{{ 'search' | page }}" method="get">
+                    <input name="q"
+                           type="text"
+                           value="{{ query }}"
+                           class="mall-input-sm mb-0"
+                           placeholder="{{ 'mall.search' | _ }}"
+                           autocomplete="off">
+                    <button type="submit" class="hidden" aria-hidden="true">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="w-1/3 text-center">
+            <a href="{{ '/' | app }}" class="text-3xl text-primary uppercase no-underline ">
+                Mall
+            </a>
+        </div>
+        <div class="w-1/3 flex justify-end">
+            <div class="mall-account-button">
+                {% partial 'accountButton/default' %}
+            </div>
+            <div class="mall-cart-button">
+                {% partial 'cartButton/default' %}
+            </div>
+        </div>
+    </div>
+</header>

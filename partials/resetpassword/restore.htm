@@ -1,0 +1,14 @@
+<p class="mb-8">
+    {{ 'mall.password_reset.lead' | _ }}
+</p>
+
+<form
+    data-request="{{ __SELF__ }}::onRestorePassword"
+    data-request-update="'{{ __SELF__ }}::reset': '#partialUserResetForm'">
+    <div class="mall-form-control">
+        <label for="userRestoreEmail">{{ 'mall.form.email' | _ }}</label>
+        <input name="email" type="email" id="userRestoreEmail" placeholder="{{ 'mall.form.email' | _ }}">
+    </div>
+
+    <button type="submit" class="mall-btn mall-btn--primary">{{ 'mall.password_reset.restore' | _ }}</button>
+</form>
