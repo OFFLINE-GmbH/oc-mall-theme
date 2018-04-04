@@ -14,6 +14,7 @@
         }
         img {
             @apply .block;
+            object-fit: contain;
         }
     }
     &__cart {

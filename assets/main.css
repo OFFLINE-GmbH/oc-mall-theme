@@ -1465,6 +1465,8 @@ a {
 
 .mall-product__image img {
   display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .mall-product__cart {
