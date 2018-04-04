@@ -7,7 +7,7 @@
         @apply .flex .flex-wrap;
     }
     &__image {
-        @apply .border-2 .border-grey-light .mr-4 .mb-4 .p-2;
+        @apply .border-2 .border-grey-light .mr-4 .mb-4 .p-2 .flex;
         width: calc(100% / 3 - 1rem);
         &:nth-child(3n) {
             @apply .mr-0;

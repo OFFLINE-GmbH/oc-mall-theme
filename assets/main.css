@@ -1454,6 +1454,8 @@ a {
   margin-right: 1rem;
   margin-bottom: 1rem;
   padding: .5rem;
+  display: -ms-flexbox;
+  display: flex;
   width: calc(100% / 3 - 1rem);
 }
 
