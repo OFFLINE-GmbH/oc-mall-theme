@@ -1442,6 +1442,10 @@ a {
   padding-right: 2rem;
 }
 
+.mall-product__description {
+  margin-bottom: 2rem;
+}
+
 .mall-product__images {
   display: -ms-flexbox;
   display: flex;

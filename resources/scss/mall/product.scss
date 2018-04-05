@@ -3,6 +3,9 @@
     &__info {
         @apply .w-3/5 .pr-8;
     }
+    &__description {
+        @apply .mb-8;
+    }
     &__images {
         @apply .flex .flex-wrap;
     }
