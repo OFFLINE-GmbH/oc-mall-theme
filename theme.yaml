@@ -133,6 +133,7 @@ translate:
         'mall.tax.exclusive': 'Plus'
         'mall.stock.checking': 'Checking stock...'
         'mall.stock.available': 'One item in stock|:stock items in stock'
+        'mall.stock.unavailable': 'Out of stock'
         'mall.stock.many_available': 'In stock'
         'mall.cart': 'Cart'
         'mall.cart.add': 'Add to cart'
