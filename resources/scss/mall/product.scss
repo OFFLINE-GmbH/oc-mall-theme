@@ -31,7 +31,7 @@
     }
     &__custom-fields {
         @apply .mb-8;
-        .mall-field-selector {
+        .mall-option-selector {
             @apply .border-2 .border-grey-light .inline-block;
             &.is-active {
                 @apply .border-grey-dark .shadow;
@@ -59,6 +59,19 @@
         text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
         &:hover {
             background: lighten(#3490dc, 5);
+        }
+    }
+}
+
+.mall-color-swatches {
+    @apply .flex .justify-start;
+    &__swatch {
+        width: 24px;
+        height: 24px;
+        margin-right: 6px;
+        @apply .border-2;
+        &.is-active {
+            @apply .border-primary;
         }
     }
 }
