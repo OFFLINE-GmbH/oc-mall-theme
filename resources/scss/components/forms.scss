@@ -69,10 +69,12 @@
 .mall-two-fields {
     @apply .flex;
     > :first-child {
-        @apply .mr-2 .flex-grow;
+        flex: 50% 0;
+        @apply .mr-2;
     }
     > :last-child {
-        @apply .ml-2 .flex-grow;
+        flex: 50% 0;
+        @apply .ml-2;
     }
 }
 

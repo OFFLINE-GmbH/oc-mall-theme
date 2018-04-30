@@ -886,15 +886,15 @@ button,
 }
 
 .mall-two-fields > :first-child {
+  -ms-flex: 50% 0;
+      flex: 50% 0;
   margin-right: .5rem;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
 }
 
 .mall-two-fields > :last-child {
+  -ms-flex: 50% 0;
+      flex: 50% 0;
   margin-left: .5rem;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
 }
 
 .mall-checkbox {
