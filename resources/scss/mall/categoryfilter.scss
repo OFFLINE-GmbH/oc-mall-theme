@@ -1,16 +1,28 @@
 .mall-category-filter {
     @apply .pr-8;
-    .mall-property {
-        @apply .mb-4;
-        min-height: 100px;
-        &__label {
-            @apply .border-b .border-smoke .font-bold .text-sm .pb-1 .mb-4;
+    .mall-property-group {
+        @apply .mb-8;
+        min-height: 105px; // Prevent jumping heights when the range filter is loaded
+        &__name {
+            @apply .border-b .border-smoke .pb-1 .mb-4;
         }
-        &__filter {
-            @apply .border-b .border-primary .font-bold .text-sm .pb-1 .mb-8;
+        &__description {
+            @apply .text-xs .text-grey-dark .mb-4 .-mt-2;
+        }
+    }
+    .mall-property {
+        @apply .mb-2;
+        &__label {
+            @apply .text-sm .mb-2 .flex;
+            & > div {
+                @apply .flex-1;
+            }
         }
         &__clear-filter {
-            @apply .float-right .text-xs .font-normal .text-grey .no-underline;
+            @apply .text-xs .font-normal .justify-end .text-right;
+            a {
+                @apply .text-grey .no-underline;
+            }
         }
     }
     .mall-filter {
@@ -47,7 +59,7 @@
         }
         &-target {
             font-size: .7rem;
-            margin-bottom: 3rem;
+            margin-bottom: 0;
         }
         &-marker-horizontal {
             width: 1px;
@@ -60,7 +72,8 @@
             top: 15px;
         }
         &-pips-horizontal {
-            height: 50px;
+            height: 20px;
+            padding: 10px 0 0;
         }
     }
 }
