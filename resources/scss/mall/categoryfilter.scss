@@ -5,6 +5,12 @@
         min-height: 105px; // Prevent jumping heights when the range filter is loaded
         &__name {
             @apply .border-b .border-smoke .pb-1 .mb-4;
+            &--price {
+                @apply .flex;
+                & > div {
+                    @apply .flex-1;
+                }
+            }
         }
         &__description {
             @apply .text-xs .text-grey-dark .mb-4 .-mt-2;

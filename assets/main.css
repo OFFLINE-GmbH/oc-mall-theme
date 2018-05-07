@@ -1288,6 +1288,16 @@ a {
   margin-bottom: 1rem;
 }
 
+.mall-category-filter .mall-property-group__name--price {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mall-category-filter .mall-property-group__name--price > div {
+  -ms-flex: 1;
+      flex: 1;
+}
+
 .mall-category-filter .mall-property-group__description {
   font-size: .75rem;
   color: #70818a;
