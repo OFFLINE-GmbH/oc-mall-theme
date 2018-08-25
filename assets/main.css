@@ -965,6 +965,10 @@ a {
   text-align: center;
 }
 
+.has-children:hover div {
+  display: block;
+}
+
 .mall-cart__wrapper {
   border-top-width: 1px;
   border-bottom-width: 1px;
