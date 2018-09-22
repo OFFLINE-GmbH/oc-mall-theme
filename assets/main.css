@@ -812,6 +812,7 @@ button,
 
 .mall-form-control {
   margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .mall-form-control label {

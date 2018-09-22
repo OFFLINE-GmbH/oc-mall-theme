@@ -47,7 +47,7 @@
 }
 
 .mall-form-control {
-    @apply .mb-6;
+    @apply .mb-6 .w-full;
     label {
         @apply .mall-label;
     }
