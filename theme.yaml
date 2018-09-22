@@ -11,6 +11,7 @@ require:
 translate:
     de:
         'mall.search': 'Suchen...'
+        'mall.sort_order': 'Sortierung'
         'mall.variants': 'Andere Varianten'
         'mall.category.empty': 'Ihre Auswahl lieferte keine Treffer.'
         'mall.reset.filter': 'Filter zurücksetzen'
@@ -128,6 +129,7 @@ translate:
         'mall.search.no_results': 'Ihre Suche lieferte keine Treffer'
     en:
         'mall.search': 'Search...'
+        'mall.sort_order': 'Sort order'
         'mall.variants': 'Other Variants'
         'mall.category.empty': 'Your selection did not return any results.'
         'mall.reset.filter': 'Reset filter'
