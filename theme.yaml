@@ -4,14 +4,16 @@ author: 'OFFLINE GmbH'
 homepage: 'https://offline.swiss'
 code: oc-mall-theme
 require:
-    - Rainlab.Translate
-    - Rainlab.Pages
-    - OFFLINE.SiteSearch
-    - OFFLINE.Mall
+- Rainlab.Translate
+- Rainlab.Pages
+- OFFLINE.SiteSearch
+- OFFLINE.Mall
 translate:
     de:
         'mall.search': 'Suchen...'
         'mall.sort_order': 'Sortierung'
+        'mall.show_all': 'Alle anzeigen'
+        'mall.brands': 'Marken'
         'mall.variants': 'Andere Varianten'
         'mall.category.empty': 'Ihre Auswahl lieferte keine Treffer.'
         'mall.reset.filter': 'Filter zurücksetzen'
@@ -130,6 +132,8 @@ translate:
     en:
         'mall.search': 'Search...'
         'mall.sort_order': 'Sort order'
+        'mall.show_all': 'Show all'
+        'mall.brands': 'Brands'
         'mall.variants': 'Other Variants'
         'mall.category.empty': 'Your selection did not return any results.'
         'mall.reset.filter': 'Reset filter'
