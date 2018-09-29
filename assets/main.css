@@ -1798,19 +1798,6 @@ a {
   margin-top: 0;
 }
 
-.mall-payment-method .mall-two-fields--number-cvv {
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.mall-payment-method .mall-two-fields--number-cvv .mall-form-control:first-child {
-  width: 75%;
-}
-
-.mall-payment-method .mall-two-fields--number-cvv .mall-form-control:last-child {
-  width: 25%;
-}
-
 .mall-shipping-method {
   margin-top: 1rem;
 }

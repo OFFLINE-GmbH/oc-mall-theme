@@ -47,15 +47,4 @@
     [data-validate-for] {
         @apply .mb-4 .mt-0;
     }
-    .mall-two-fields {
-        &--number-cvv {
-            @apply .flex;
-            .mall-form-control:first-child {
-                @apply .w-3/4;
-            }
-            .mall-form-control:last-child {
-                @apply .w-1/4;
-            }
-        }
-    }
 }
