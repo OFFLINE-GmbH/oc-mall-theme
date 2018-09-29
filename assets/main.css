@@ -772,6 +772,7 @@ button,
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: .75rem;
+  max-width: 460px;
 }
 
 .mall-input-sm {
@@ -842,6 +843,7 @@ button,
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: .75rem;
+  max-width: 460px;
 }
 
 .mall-form-control select {
@@ -1737,6 +1739,10 @@ a {
   opacity: .5;
 }
 
+.mall-payment-method__text div {
+  width: 100%;
+}
+
 .mall-payment-method__name {
   font-weight: 700;
 }
@@ -1756,6 +1762,7 @@ a {
 
 .mall-payment-method__data {
   margin-top: 2rem;
+  width: 100%;
 }
 
 .mall-payment-method__selector {

@@ -18,6 +18,9 @@
     }
     &__text {
         @apply .flex-1 .flex .items-center .opacity-50;
+        div {
+            @apply .w-full;
+        }
     }
     &__name {
         @apply .font-bold;
@@ -29,7 +32,7 @@
         @apply .text-sm .leading-normal .text-grey .mt-2;
     }
     &__data {
-        @apply .mt-8;
+        @apply .mt-8 .w-full;
     }
     &__selector {
         width: 180px;
