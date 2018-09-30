@@ -11,6 +11,7 @@ require:
 translate:
     de:
         'mall.search': 'Suchen...'
+        'mall.please_wait': 'Bitte warten...'
         'mall.sort_order': 'Sortierung'
         'mall.show_all': 'Alle anzeigen'
         'mall.brands': 'Marken'
@@ -128,6 +129,7 @@ translate:
         'mall.search.no_results': 'Ihre Suche lieferte keine Treffer'
     en:
         'mall.search': 'Search...'
+        'mall.please_wait': 'Please wait...'
         'mall.sort_order': 'Sort order'
         'mall.show_all': 'Show all'
         'mall.brands': 'Brands'

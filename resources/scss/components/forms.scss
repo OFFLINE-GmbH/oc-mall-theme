@@ -16,8 +16,10 @@
 .mall-input {
     @apply .appearance-none .block .w-full .bg-grey-lighter .text-grey-darker .border .border-grey-lighter .rounded .py-3 .px-4 .mb-3;
     max-width: 460px;
+    min-height: 42.6px;
     &-sm {
         @apply .py-2 .px-3;
+        min-height: 0;
     }
 }
 

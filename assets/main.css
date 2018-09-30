@@ -773,6 +773,7 @@ button,
   padding-right: 1rem;
   margin-bottom: .75rem;
   max-width: 460px;
+  min-height: 42.6px;
 }
 
 .mall-input-sm {
@@ -780,6 +781,7 @@ button,
   padding-bottom: .5rem;
   padding-left: .75rem;
   padding-right: .75rem;
+  min-height: 0;
 }
 
 .has-error .mall-input {
@@ -844,6 +846,7 @@ button,
   padding-right: 1rem;
   margin-bottom: .75rem;
   max-width: 460px;
+  min-height: 42.6px;
 }
 
 .mall-form-control select {
