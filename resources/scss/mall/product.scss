@@ -61,14 +61,15 @@
     }
     &__add-to-cart-form {
         @apply .border-t .border-smoke-light .pt-8;
-        button {
-            @apply .mall-btn .w-full .block .bg-blue .border-blue-dark .text-white .shadow-md .py-3 .text-base .mt-4 .uppercase .font-bold;
-            transition: .1s ease background;
-            text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
-            &:hover {
-                background: lighten(#3490dc, 5);
-            }
-        }
+    }
+}
+
+.mall-add-to-cart-button {
+    @apply .mall-btn .w-full .block .bg-blue .border-blue-dark .text-white .shadow-md .py-3 .text-base .mt-4 .uppercase .font-bold;
+    transition: .1s ease background;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+    &:hover {
+        background: lighten(#3490dc, 5);
     }
 }
 

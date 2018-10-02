@@ -1591,7 +1591,7 @@ a {
   padding-top: 2rem;
 }
 
-.mall-product__add-to-cart-form button {
+.mall-add-to-cart-button {
   font-size: .875rem;
   display: inline;
   background-color: #fff;
@@ -1623,7 +1623,7 @@ a {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
 }
 
-.mall-product__add-to-cart-form button:hover {
+.mall-add-to-cart-button:hover {
   background: #4a9ce0;
 }
 
