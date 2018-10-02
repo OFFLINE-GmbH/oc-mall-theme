@@ -4802,6 +4802,10 @@ a {
   white-space: nowrap;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-24 {
   width: 6rem;
 }
@@ -5749,6 +5753,10 @@ a {
     visibility: hidden;
   }
 
+  .sm\:w-6 {
+    width: 1.5rem;
+  }
+
   .sm\:w-24 {
     width: 6rem;
   }
@@ -6675,6 +6683,10 @@ a {
 
   .md\:invisible {
     visibility: hidden;
+  }
+
+  .md\:w-6 {
+    width: 1.5rem;
   }
 
   .md\:w-24 {
@@ -7605,6 +7617,10 @@ a {
     visibility: hidden;
   }
 
+  .lg\:w-6 {
+    width: 1.5rem;
+  }
+
   .lg\:w-24 {
     width: 6rem;
   }
@@ -8531,6 +8547,10 @@ a {
 
   .xl\:invisible {
     visibility: hidden;
+  }
+
+  .xl\:w-6 {
+    width: 1.5rem;
   }
 
   .xl\:w-24 {
