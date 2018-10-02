@@ -1551,10 +1551,10 @@ a {
   display: block;
 }
 
-.mall-product__current-price {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #222b2f;
+.mall-product__price {
+  border-top-width: 1px;
+  border-color: #f1f6f8;
+  padding-top: 2rem;
 }
 
 .mall-product__old-price {
@@ -1563,6 +1563,12 @@ a {
   color: #e3342f;
   text-decoration: line-through;
   margin-bottom: .25rem;
+}
+
+.mall-product__current-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222b2f;
 }
 
 .mall-product__tax-info {
@@ -1575,11 +1581,17 @@ a {
 .mall-product__property-stock {
   font-size: .75rem;
   margin-top: .5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #9babb4;
 }
 
-.mall-product__add-to-cart-button button {
+.mall-product__add-to-cart-form {
+  border-top-width: 1px;
+  border-color: #f1f6f8;
+  padding-top: 2rem;
+}
+
+.mall-product__add-to-cart-form button {
   font-size: .875rem;
   display: inline;
   background-color: #fff;
@@ -1604,14 +1616,14 @@ a {
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-transform: uppercase;
   font-weight: 700;
   transition: .1s ease background;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
 }
 
-.mall-product__add-to-cart-button button:hover {
+.mall-product__add-to-cart-form button:hover {
   background: #4a9ce0;
 }
 

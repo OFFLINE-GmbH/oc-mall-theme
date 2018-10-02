@@ -44,24 +44,30 @@
             }
         }
     }
-    &__current-price {
-        @apply .text-2xl .font-bold .text-black;
+    &__price {
+        @apply .border-t .border-smoke-light .pt-8;
     }
     &__old-price {
         @apply .text-sm .font-bold .text-red .line-through .mb-1;
+    }
+    &__current-price {
+        @apply .text-2xl .font-bold .text-black;
     }
     &__tax-info {
         @apply .text-xs .text-grey .mt-2 .mb-4;
     }
     &__property-stock {
-        @apply .text-xs .mt-2 .mb-4 .text-grey;
+        @apply .text-xs .mt-2 .mb-8 .text-grey;
     }
-    &__add-to-cart-button button {
-        @apply .mall-btn .w-full .block .bg-blue .border-blue-dark .text-white .shadow-md .py-3 .text-base .mt-8 .uppercase .font-bold;
-        transition: .1s ease background;
-        text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
-        &:hover {
-            background: lighten(#3490dc, 5);
+    &__add-to-cart-form {
+        @apply .border-t .border-smoke-light .pt-8;
+        button {
+            @apply .mall-btn .w-full .block .bg-blue .border-blue-dark .text-white .shadow-md .py-3 .text-base .mt-4 .uppercase .font-bold;
+            transition: .1s ease background;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+            &:hover {
+                background: lighten(#3490dc, 5);
+            }
         }
     }
 }
