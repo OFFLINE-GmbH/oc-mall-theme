@@ -6,21 +6,21 @@ is_hidden = 0
 [viewBag]
 localeUrl[en] = "/category/:slug*"
 
-[category]
+[products]
 category = ":slug"
 product_page = "product.htm"
 show_variants = 1
 per_page = 9
 
-[categoryFilter]
+[productsFilter]
 category = ":slug"
 showPriceFilter = 1
 ==
 <div class="flex">
     <div class="w-1/4">
-        {% component 'categoryFilter' %}
+        {% component 'productsFilter' %}
     </div>
     <div class="w-3/4">
-        {% component 'category' %}
+        {% component 'products' %}
     </div>
 </div>
