@@ -13,7 +13,7 @@
             <span class="text-grey-dark no-underline hover:text-grey-darker">{{ item.title }}</span>
         {% endif %}
         {% if item.items %}
-            <div class="absolute hidden shadow py-2 bg-white text-left rounded-sm -ml-4 z-40 max-w-sm">
+            <div class="absolute hidden shadow py-2 bg-white text-left rounded-sm -ml-4 z-30 max-w-sm">
                 {% partial __SELF__ ~ "::items" items=item.items isSubnav=true %}
             </div>
         {% endif %}
