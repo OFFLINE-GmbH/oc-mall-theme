@@ -1238,6 +1238,7 @@ a {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+  color: transparent;
 }
 
 .mall-category-item__image img {
