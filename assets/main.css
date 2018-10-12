@@ -939,6 +939,10 @@ a {
   color: #103d60;
 }
 
+.text-muted {
+  color: #70818a;
+}
+
 .mall-table {
   width: 100%;
   text-align: left;
@@ -1010,10 +1014,6 @@ a {
 .mall-cart__product td:first-child {
   border-color: #dae4e9;
   width: 8rem;
-}
-
-.mall-cart__product td .text-muted {
-  color: #70818a;
 }
 
 .mall-cart__product td a {

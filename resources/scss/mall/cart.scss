@@ -14,9 +14,6 @@
         &:first-child {
             @apply .border-smoke .w-32;
         }
-        .text-muted {
-            @apply .text-grey-dark;
-        }
         a {
             @apply .no-underline .text-grey-darkest;
         }

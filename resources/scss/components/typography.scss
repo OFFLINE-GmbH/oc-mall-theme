@@ -13,3 +13,6 @@ p {
 a {
     @apply .text-primary;
 }
+.text-muted {
+    @apply .text-grey-dark;
+}
