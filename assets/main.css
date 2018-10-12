@@ -783,6 +783,10 @@ button,
   min-height: 0;
 }
 
+.mall-input--width-limited {
+  max-width: 450px;
+}
+
 .has-error .mall-input {
   background-color: #fcebea;
 }

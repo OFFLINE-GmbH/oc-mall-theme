@@ -20,6 +20,9 @@
         @apply .py-2 .px-3;
         min-height: 0;
     }
+    &--width-limited {
+        max-width: 450px;
+    }
 }
 
 .has-error .mall-input {
