@@ -21,6 +21,7 @@
             @apply .underline .text-primary;
         }
     }
+    &__payment td,
     &__discount td,
     &__shipping td {
         @apply .p-2 .border-t .text-xs .whitespace-no-wrap;

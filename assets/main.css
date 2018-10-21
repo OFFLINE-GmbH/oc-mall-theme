@@ -638,6 +638,8 @@ button,
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  white-space: nowrap;
+  min-height: 42px;
 }
 
 .mall-btn:hover {
@@ -690,6 +692,7 @@ button,
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: .75rem;
+  min-height: 0;
 }
 
 .mall-selectbox {
@@ -1026,6 +1029,7 @@ a {
   color: #103d60;
 }
 
+.mall-cart__payment td,
 .mall-cart__discount td,
 .mall-cart__shipping td {
   padding: .5rem;
@@ -1476,6 +1480,8 @@ a {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  white-space: nowrap;
+  min-height: 42px;
   width: 100%;
   display: block;
   background-color: #3490dc;
@@ -1806,6 +1812,8 @@ a {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  white-space: nowrap;
+  min-height: 42px;
   margin-right: 1rem;
   white-space: nowrap;
 }
@@ -1921,6 +1929,8 @@ a {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  white-space: nowrap;
+  min-height: 42px;
   margin-right: 1rem;
   white-space: nowrap;
 }

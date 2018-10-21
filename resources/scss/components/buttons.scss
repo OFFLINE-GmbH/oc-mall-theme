@@ -1,5 +1,7 @@
 .mall-btn {
     @apply .text-sm .inline .bg-white .text-grey-darkest .py-3 .px-6 .border .border-grey-light .rounded .shadow .text-center .cursor-pointer .no-underline;
+    white-space: nowrap;
+    min-height: 42px;
     &:hover {
         @apply .bg-grey-lighter;
     }
@@ -26,6 +28,7 @@
     }
     &--sm {
         @apply .py-2 .px-4 .text-xs;
+        min-height: 0;
     }
 }
 
