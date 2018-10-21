@@ -9,17 +9,24 @@ localeUrl[en] = "/category/:slug*"
 [products]
 category = ":slug"
 showVariants = 1
+includeChildren = 1
 perPage = 9
 
 [productsFilter]
 category = ":slug"
 showPriceFilter = 1
+showBrandFilter = 1
+includeChildren = 1
+includeVariants = 1
+includeSliderAssets = 1
 ==
 <div class="flex">
     <div class="w-1/4">
         {% component 'productsFilter' %}
     </div>
     <div class="w-3/4">
+        <h2 class="pl-4">{{ products.category.name }}</h2>
+
         {% component 'products' %}
     </div>
 </div>
