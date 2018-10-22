@@ -17,6 +17,13 @@
     .row.flex {
         @apply .pt-1;
     }
+    &__info-primary {
+        @apply .pt-1;
+    }
+    &__info-primary,
+    &__info-secondary {
+        @apply .flex;
+    }
     &__image {
         @apply .border-b .border-smoke;
         height: 240px;
