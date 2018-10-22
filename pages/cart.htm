@@ -14,7 +14,7 @@ showTaxes = 0
 {% if cart.products.count > 0 %}
     <div class="mall-cart-actions">
         <a href="{{ 'checkout' | page }}" class="mall-btn mall-btn--primary">
-            {{ 'mall.checkout.begin' | _ }}
+            {{ 'offline.mall::frontend.checkout.begin' | trans }}
         </a>
     </div>
 {% endif %}
