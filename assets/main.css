@@ -599,12 +599,6 @@ textarea {
   font-family: inherit;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: inherit;
-  opacity: .5;
-}
-
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: inherit;
