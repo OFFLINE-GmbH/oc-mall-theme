@@ -25,7 +25,8 @@
     &__name {
         @apply .font-bold;
     }
-    &__description {
+    &__description,
+    &__instructions {
         @apply .text-xs .leading-tight .mt-4;
     }
     &__meta {
