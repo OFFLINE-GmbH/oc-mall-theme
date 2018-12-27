@@ -18,6 +18,9 @@
     }
     .mall-property {
         @apply .mb-2;
+        &:not(:last-child) .mall-filter.mall-filter--range {
+            margin-bottom: 4rem;
+        }
         &__label {
             @apply .text-sm .mb-2 .flex;
             & > div {
