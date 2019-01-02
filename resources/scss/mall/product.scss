@@ -36,6 +36,8 @@
         @apply .mb-8;
         .mall-option-selector {
             @apply .border-2 .border-grey-light .inline-block;
+            width: 24px;
+            height: 24px;
             &.is-active {
                 @apply .border-grey-dark .shadow;
             }
