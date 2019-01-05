@@ -42,6 +42,9 @@
     }
     &__price {
         @apply .flex-no-grow .pl-2 .whitespace-no-wrap;
+        &--special {
+            @apply .text-red-dark .font-bold;
+        }
     }
     &__short-description {
         @apply .flex-grow .truncate .text-grey-dark;
