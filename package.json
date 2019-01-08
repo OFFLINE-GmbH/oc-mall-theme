@@ -4,7 +4,7 @@
   "description": "Official starter theme for the Mall e-commerce plugin",
   "main": "Gulpfile.js",
   "dependencies": {
-    "gulp-plumber": "^1.2.0"
+    "gulp-plumber": "^1.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
