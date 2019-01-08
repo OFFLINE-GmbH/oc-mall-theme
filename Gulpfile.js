@@ -28,6 +28,7 @@ gulp.task('styles', function () {
         .pipe(postcss([
             tailwindcss('tailwind.js'),
             require('autoprefixer'),
+            require('cssnano')
         ]))
         .pipe(util.env.production ? nano({autoprefixer: false}) : util.noop())
         .pipe(util.env.production ? sourcemaps.write('./') : util.noop())

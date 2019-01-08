@@ -3,7 +3,8 @@
 }
 
 .mall-selectbox-sm {
-    @apply .mall-selectbox .py-1 .px-1 .pr-6 .dropdown-pointer;
+    @apply .mall-selectbox .py-1 .px-1 .dropdown-pointer;
+    padding-right: 6rem;
     background-size: 1.2em 1.2em;
     background-position: right .75em top 50%;
     min-width: 60px;
