@@ -24,7 +24,7 @@ View the full documentation at https://tailwindcss.com.
 |
 */
 
-var defaultConfig = require('tailwindcss/defaultConfig')()
+let defaultConfig = require('tailwindcss/defaultConfig')()
 
 /*
 |-------------------------------------------------------------------------------
@@ -42,7 +42,7 @@ var defaultConfig = require('tailwindcss/defaultConfig')()
 |
 */
 
-var colors = {
+let colors = {
     'transparent': 'transparent',
 
     'primary': '#103d60',
@@ -141,6 +141,7 @@ module.exports = {
     | provided by the platform.
     |
     | Class name: .font-{name}
+    | CSS property: font-family
     |
     */
 
@@ -196,6 +197,7 @@ module.exports = {
     | prefer, be it rems, ems, pixels or other.
     |
     | Class name: .text-{size}
+    | CSS property: font-size
     |
     */
 
@@ -223,6 +225,7 @@ module.exports = {
     | all of these, so we recommend removing those you don't need.
     |
     | Class name: .font-{weight}
+    | CSS property: font-weight
     |
     */
 
@@ -247,6 +250,7 @@ module.exports = {
     | them in Tailwind, leadings.
     |
     | Class name: .leading-{size}
+    | CSS property: line-height
     |
     */
 
@@ -266,6 +270,7 @@ module.exports = {
     | them in Tailwind, tracking.
     |
     | Class name: .tracking-{size}
+    | CSS property: letter-spacing
     |
     */
 
@@ -285,6 +290,7 @@ module.exports = {
     | independently if that makes sense for your project.
     |
     | Class name: .text-{color}
+    | CSS property: color
     |
     */
 
@@ -300,10 +306,31 @@ module.exports = {
     | these independently if that makes sense for your project.
     |
     | Class name: .bg-{color}
+    | CSS property: background-color
     |
     */
 
     backgroundColors: colors,
+
+    /*
+    |-----------------------------------------------------------------------------
+    | Background sizes               https://tailwindcss.com/docs/background-size
+    |-----------------------------------------------------------------------------
+    |
+    | Here is where you define your background sizes. We provide some common
+    | values that are useful in most projects, but feel free to add other sizes
+    | that are specific to your project here as well.
+    |
+    | Class name: .bg-{size}
+    | CSS property: background-size
+    |
+    */
+
+    backgroundSize: {
+        'auto': 'auto',
+        'cover': 'cover',
+        'contain': 'contain',
+    },
 
     /*
     |-----------------------------------------------------------------------------
@@ -315,6 +342,7 @@ module.exports = {
     | width that will be used when you do not specify a border width.
     |
     | Class name: .border{-side?}{-width?}
+    | CSS property: border-width
     |
     */
 
@@ -340,10 +368,11 @@ module.exports = {
     | specify a border color.
     |
     | Class name: .border-{color}
+    | CSS property: border-color
     |
     */
 
-    borderColors: Object.assign({default: colors['grey-light']}, colors),
+    borderColors: global.Object.assign({default: colors['grey-light']}, colors),
 
     /*
     |-----------------------------------------------------------------------------
@@ -358,6 +387,7 @@ module.exports = {
     | a good idea to put it first so other values are able to override it.
     |
     | Class name: .rounded{-side?}{-size?}
+    | CSS property: border-radius
     |
     */
 
@@ -386,8 +416,10 @@ module.exports = {
     | awesome classes like .w-2/3.
     |
     | Class name: .w-{size}
+    | CSS property: width
     |
     */
+
 
     width: {
         'auto': 'auto',
@@ -432,6 +464,7 @@ module.exports = {
     | needed.
     |
     | Class name: .h-{size}
+    | CSS property: height
     |
     */
 
@@ -453,6 +486,7 @@ module.exports = {
     | these values as needed.
     |
     | Class name: .min-w-{size}
+    | CSS property: min-width
     |
     */
 
@@ -472,13 +506,14 @@ module.exports = {
     | values as needed.
     |
     | Class name: .min-h-{size}
+    | CSS property: min-height
     |
     */
 
     minHeight: {
         '0': '0',
         'full': '100%',
-        'screen': '100vh'
+        'screen': '100vh',
     },
 
     /*
@@ -493,10 +528,20 @@ module.exports = {
     | modify these values as needed.
     |
     | Class name: .max-w-{size}
+    | CSS property: max-width
     |
     */
 
     maxWidth: {
+        'xs': '20rem',
+        'sm': '30rem',
+        'md': '40rem',
+        'lg': '50rem',
+        'xl': '60rem',
+        '2xl': '70rem',
+        '3xl': '80rem',
+        '4xl': '90rem',
+        '5xl': '100rem',
         'full': '100%',
     },
 
@@ -511,6 +556,7 @@ module.exports = {
     | these values as needed.
     |
     | Class name: .max-h-{size}
+    | CSS property: max-height
     |
     */
 
@@ -531,6 +577,7 @@ module.exports = {
     | values as needed.
     |
     | Class name: .p{side?}-{size}
+    | CSS property: padding
     |
     */
 
@@ -541,8 +588,15 @@ module.exports = {
         '2': '0.5rem',
         '3': '0.75rem',
         '4': '1rem',
+        '5': '1.25rem',
         '6': '1.5rem',
         '8': '2rem',
+        '10': '2.5rem',
+        '12': '3rem',
+        '16': '4rem',
+        '20': '5rem',
+        '24': '6rem',
+        '32': '8rem',
     },
 
     /*
@@ -557,6 +611,7 @@ module.exports = {
     | values as needed.
     |
     | Class name: .m{side?}-{size}
+    | CSS property: margin
     |
     */
 
@@ -568,8 +623,15 @@ module.exports = {
         '2': '0.5rem',
         '3': '0.75rem',
         '4': '1rem',
+        '5': '1.25rem',
         '6': '1.5rem',
         '8': '2rem',
+        '10': '2.5rem',
+        '12': '3rem',
+        '16': '4rem',
+        '20': '5rem',
+        '24': '6rem',
+        '32': '8rem',
     },
 
     /*
@@ -584,6 +646,7 @@ module.exports = {
     | values as needed.
     |
     | Class name: .-m{side?}-{size}
+    | CSS property: margin
     |
     */
 
@@ -594,8 +657,15 @@ module.exports = {
         '2': '0.5rem',
         '3': '0.75rem',
         '4': '1rem',
+        '5': '1.25rem',
         '6': '1.5rem',
         '8': '2rem',
+        '10': '2.5rem',
+        '12': '3rem',
+        '16': '4rem',
+        '20': '5rem',
+        '24': '6rem',
+        '32': '8rem',
     },
 
     /*
@@ -611,6 +681,7 @@ module.exports = {
     | suffixed `.shadow` utility.
     |
     | Class name: .shadow-{size?}
+    | CSS property: box-shadow
     |
     */
 
@@ -619,6 +690,7 @@ module.exports = {
         'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
         'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
         'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+        'outline': '0 0 0 3px rgba(52,144,220,0.5)',
         'none': 'none',
     },
 
@@ -632,6 +704,7 @@ module.exports = {
     | values as needed.
     |
     | Class name: .z-{index}
+    | CSS property: z-index
     |
     */
 
@@ -641,6 +714,8 @@ module.exports = {
         '10': 10,
         '20': 20,
         '30': 30,
+        '40': 40,
+        '50': 50,
     },
 
     /*
@@ -653,13 +728,15 @@ module.exports = {
     | values as needed.
     |
     | Class name: .opacity-{name}
+    | CSS property: opacity
     |
     */
 
     opacity: {
         '0': '0',
-        '50': '0.5',
-        '90': '0.9',
+        '25': '.25',
+        '50': '.5',
+        '75': '.75',
         '100': '1',
     },
 
@@ -674,6 +751,7 @@ module.exports = {
     | generated CSS file size down.
     |
     | Class name: .fill-{name}
+    | CSS property: fill
     |
     */
 
@@ -692,6 +770,7 @@ module.exports = {
     | keep the generated CSS file size down.
     |
     | Class name: .stroke-{name}
+    | CSS property: stroke
     |
     */
 
@@ -707,7 +786,13 @@ module.exports = {
     | Here is where you control which modules are generated and what variants are
     | generated for each of those modules.
     |
-    | Currently supported variants: 'responsive', 'hover', 'focus'
+    | Currently supported variants:
+    |   - responsive
+    |   - hover
+    |   - focus
+    |   - focus-within
+    |   - active
+    |   - group-hover
     |
     | To disable a module completely, use `false` instead of an array.
     |
@@ -760,6 +845,27 @@ module.exports = {
         width: ['responsive'],
         zIndex: [],
     },
+
+    /*
+    |-----------------------------------------------------------------------------
+    | Plugins                                https://tailwindcss.com/docs/plugins
+    |-----------------------------------------------------------------------------
+    |
+    | Here is where you can register any plugins you'd like to use in your
+    | project. Tailwind's built-in `container` plugin is enabled by default to
+    | give you a Bootstrap-style responsive container component out of the box.
+    |
+    | Be sure to view the complete plugin documentation to learn more about how
+    | the plugin system works.
+    |
+    */
+
+    plugins: [
+        require('tailwindcss/plugins/container')({
+            center: true,
+            // padding: '1rem',
+        }),
+    ],
 
     /*
     |-----------------------------------------------------------------------------

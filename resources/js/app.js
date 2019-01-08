@@ -1,1 +1,3 @@
 // JS.
+
+export default {}

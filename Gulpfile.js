@@ -50,5 +50,5 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest(paths.destination));
 });
 
-gulp.watch(paths.cssSource + '**/*.scss', ['styles']);
-gulp.task('default', ['styles', 'scripts']);
+gulp.watch(paths.cssSource + '**/*.scss', gulp.parallel('styles'));
+gulp.task('default', gulp.parallel('styles', 'scripts'));
