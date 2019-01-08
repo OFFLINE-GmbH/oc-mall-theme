@@ -18,7 +18,7 @@
         }
     }
     &--link {
-        @apply .inline-block .align-baseline .font-bold .text-sm .text-blue .p-0 .shadow-none .border-0;
+        @apply .inline-block .align-baseline .font-bold .text-sm .text-blue .shadow-none .border-0;
         &:hover {
             @apply .text-blue-darker .bg-transparent;
         }
