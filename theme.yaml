@@ -6,5 +6,7 @@ code: oc-mall-theme
 require:
 - Rainlab.Translate
 - Rainlab.Pages
+- Rainlab.User
+- Rainlab.Location
 - OFFLINE.SiteSearch
 - OFFLINE.Mall
