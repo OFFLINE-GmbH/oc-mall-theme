@@ -43,6 +43,9 @@
                 @apply .bg-primary .text-white;
             }
         }
+        &--on-sale {
+            margin-top: -1rem;
+        }
     }
     .noUi {
         &-connect {
