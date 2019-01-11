@@ -37,5 +37,13 @@ forceUrl = 1
 <script src="{{ 'assets/app.js' | theme }}"></script>
 {% framework extras %}
 {% scripts %}
+
+{% flash %}
+    <script>
+        $(function() {
+            $.oc.flashMsg({type: '{{ type }}', text: '{{ message }}'})
+        })
+    </script>
+{% endflash %}
 </body>
 </html>
