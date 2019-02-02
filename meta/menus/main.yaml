@@ -28,9 +28,22 @@ items:
             isExternal: '0'
     -
         title: 'All Static Pages'
+        nesting: ''
         type: all-static-pages
+        url: ''
         code: ''
+        reference: ''
+        cmsPage: ''
         replace: '1'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Mountainbikes
+        type: mall-category
+        code: ''
+        reference: '2'
         viewBag:
             isHidden: '0'
             cssClass: ''

@@ -65,6 +65,16 @@
     }
 }
 
+.mall-form-checkbox {
+    @apply .mb-6 .w-full;
+
+    input[type="checkbox"] {
+        margin-right: 4px;
+        position: relative;
+        top: 1px;
+    }
+}
+
 .mall-form-actions {
     @apply .flex .items-center .justify-start .mt-6;
     .mall-btn + .mall-btn {
