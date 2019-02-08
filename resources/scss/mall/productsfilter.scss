@@ -39,7 +39,7 @@
         &__option {
             @apply .p-2 .mr-2 .mb-2 .bg-smoke .cursor-pointer .text-center .text-sm;
             min-width: 40px;
-            &--selected {
+            &--selected:not(.mall-label--checkbox) {
                 @apply .bg-primary .text-white;
             }
         }
