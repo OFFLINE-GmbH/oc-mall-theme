@@ -1,12 +1,24 @@
 description = "Default"
 
 [cart]
+showDiscountApplier = 1
+showTaxes = 1
+
 [mallDependencies]
+
 [session]
+security = "all"
+
 [staticPage]
+useContent = 1
+default = 0
+
 [currencyPicker]
+
 [localePicker]
 forceUrl = 1
+
+[enhancedEcommerceAnalytics]
 ==
 <!doctype html>
 <html lang="en">
@@ -23,6 +35,7 @@ forceUrl = 1
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"
     ></script>
+    {% component 'enhancedEcommerceAnalytics' %}
 </head>
 <body>
 {% partial 'header' %}
@@ -33,7 +46,6 @@ forceUrl = 1
 </main>
 
 {% partial 'footer' %}
-
 <script src="{{ 'assets/app.js' | theme }}"></script>
 {% framework extras %}
 {% scripts %}
