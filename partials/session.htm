@@ -1,5 +1,5 @@
 {% if user %}
-    {{ 'offline.mall::frontend.session.logged_in' | trans({email: user.email}) }}.
+    {{ 'offline.mall::frontend.session.logged_in' | trans({email: user.email}) | escape }}.
     <span class="ml-4">
         <a href="javascript:;" data-request="onLogout" data-request-data="redirect: '/'">
             {{ 'offline.mall::frontend.session.logout' | trans }}

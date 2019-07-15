@@ -11,7 +11,7 @@ showProviderBadge = 1
 localeUrl[en] = "/search"
 ==
 <div class="w-3/4 m-auto">
-    <h2 class="mb-8">{{ 'offline.mall::frontend.search.heading' | trans({query: searchResults.query}) }}</h2>
+    <h2 class="mb-8">{{ 'offline.mall::frontend.search.heading' | trans({query: searchResults.query}) | escape }}</h2>
 
     <div class="pt-8">
         {% component 'searchResults' %}
