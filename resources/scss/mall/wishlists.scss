@@ -1,0 +1,128 @@
+.mall-wishlists-manager {
+    display: flex;
+    &__lists {
+        width: 350px;
+    }
+    &__contents {
+        flex: 1 1 auto;
+        @apply .bg-grey-lightest .p-8;
+    }
+    &__header {
+        @apply .mb-8;
+    }
+    &__well {
+        @apply .bg-white .shadow .rounded .flex-1;
+    }
+    &__input {
+        @apply .text-lg .border-b .border-grey .px-0 .py-2 .w-full;
+        background: transparent;
+        flex: 1 1 auto;
+    }
+    &__form {
+        display: flex;
+    }
+    &__action-button {
+        flex: 1 1 60px;
+        margin-left: 20px;
+    }
+    &__actions {
+        text-align: right;
+        @apply .mt-8;
+    }
+    .mall-trash-icon {
+        width: 14px;
+        @apply .text-grey .fill-current;
+    }
+    .mall-wishlist-empty {
+        @apply .p-4;
+        text-align: center;
+    }
+}
+
+.mall-wishlist-button {
+    position: relative;
+
+    &__popup {
+        @apply .text-xs;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(20px);
+        transition: .2s ease-out;
+        transition-property: transform, opacity;
+    }
+    &__popup--visible {
+        opacity: 1;
+        pointer-events: initial;
+        transform: translateY(0px);
+    }
+    &__popup-inner {
+        @apply .shadow-md .rounded;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        overflow: hidden;
+    }
+    &__new {
+        border: 1px dashed;
+        @apply .border-grey .px-4 .py-3 .m-4 .rounded;
+        display: block;
+        position: relative;
+    }
+    &__name-input {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    &__new-label {
+        @apply .text-grey;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.mall-wishlists {
+    width: 100%;
+
+    &--height-limited {
+        overflow-y: auto;
+        max-height: 400px;
+    }
+}
+
+.mall-wishlist-item {
+    @apply .p-4;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover,
+    &--active {
+        @apply .bg-grey-lightest;
+    }
+
+    &__data {
+        flex: 1 0 auto;
+    }
+
+    &__description {
+        @apply .text-grey .mt-1;
+    }
+
+    &__meta {
+        margin-left: 20px;
+        text-align: right;
+        flex: 0 0 auto;
+    }
+}
+
+.mall-add-to-wishlist-button {
+    @apply .mt-1;
+}
