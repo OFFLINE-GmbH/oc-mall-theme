@@ -26,6 +26,13 @@
     &--full {
         @apply .w-full;
     }
+    &--disabled, &[disabled] {
+        @apply .bg-grey .border-grey-dark;
+        cursor: no-drop;
+        &:hover {
+            @apply .bg-grey;
+        }
+    }
     &--sm {
         @apply .py-2 .px-4 .text-xs;
         min-height: 0;

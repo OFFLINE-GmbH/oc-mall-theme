@@ -67,7 +67,6 @@
 
 .mall-form-checkbox {
     @apply .mb-6 .w-full;
-
     input[type="checkbox"] {
         margin-right: 4px;
         position: relative;
@@ -100,6 +99,8 @@
 
 .mall-checkbox {
     @apply .block .text-grey-dark .font-bold;
+    text-indent: -27px;
+    padding-left: 27px;
     > input {
         @apply .mr-2;
     }

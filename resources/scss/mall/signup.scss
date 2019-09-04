@@ -25,4 +25,7 @@
     .mall-form-actions .mall-btn--primary {
         @apply .text-base;
     }
+    &-terms {
+        @apply .bg-grey-lighter .p-6 .rounded .border .border-grey-light;
+    }
 }
