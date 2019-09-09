@@ -46,6 +46,19 @@
     &__empty {
         @apply .p-6 .bg-smoke-light .text-center .w-1/2 .m-auto;
     }
+    &__services td {
+        @apply .px-2 .py-1 .bg-grey-lightest .text-grey-darker .text-xs;
+    }
+    &__services--first td {
+        @apply .border-t .border-smoke .pt-2;
+    }
+    &__services--last td {
+        @apply .pb-2;
+    }
+    &__price-additions {
+        @apply .text-grey-dark;
+        font-style: italic;
+    }
 }
 
 .mall-cart-actions {
