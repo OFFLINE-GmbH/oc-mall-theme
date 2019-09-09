@@ -1,0 +1,43 @@
+.mall-modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, .5);
+    transition: .3s ease;
+    transition-property: opacity, visibility;
+    overflow-y: scroll;
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    &--visible {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: initial;
+    }
+
+    &__inner {
+        width: 600px;
+        max-width: 95%;
+        margin: 2rem auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+        padding: 2rem;
+        background: #fff;
+        border-radius: 3px;
+
+        & > h3 {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+    }
+}
