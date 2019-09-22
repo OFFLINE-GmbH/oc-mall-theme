@@ -23,6 +23,12 @@
             @apply .text-blue-darker .bg-transparent;
         }
     }
+    &--text {
+        @apply .inline-block .align-baseline .text-sm .text-grey .shadow-none .border-0 .p-0 .m-0 .text-xs;
+        &:hover {
+            @apply .text-blue-darker .bg-transparent;
+        }
+    }
     &--full {
         @apply .w-full;
     }
