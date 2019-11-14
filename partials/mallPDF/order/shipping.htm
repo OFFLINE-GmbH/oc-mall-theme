@@ -1,0 +1,15 @@
+{% if shipping %}
+    <tr class="orderfooter separator">
+        <td colspan="3">
+            {{ 'offline.mall::lang.common.shipping' | trans }}:
+            {{ shipping.method.name }}
+            {% if shipping.appliedDiscount %}
+                ({{ shipping.appliedDiscount.discount.name }},
+                {{ shipping.appliedDiscount.savings }}
+            {% endif %}
+        </td>
+        <td style="text-align: right">
+            {{ shipping.method.price_formatted }}
+        </td>
+    </tr>
+{% endif %}

@@ -1,0 +1,59 @@
+<table width="100%" cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <th style="text-align:left; width: 50%">
+            {{ 'offline.mall::lang.product.name' | trans }}
+        </th>
+        <th style="text-align: right; width: 10%">
+            {{ 'offline.mall::lang.order.quantity' | trans }}
+        </th>
+        <th style="text-align: right; width: 20%">
+            {{ 'offline.mall::lang.product.price' | trans }}
+        </th>
+        <th style="text-align: right; width: 20%">
+            {{ 'offline.mall::lang.order.total' | trans }}
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+
+    {% for item in products %}
+        {% partial 'mallPDF/order/row' item=item %}
+    {% endfor %}
+
+    <tr class="orderfooter separator separator-bottom">
+        <td colspan="3" style="border-top: 1px solid #f5f8fa; font-style: italic;">
+            {{ 'offline.mall::lang.order.subtotal' | trans }}
+        </td>
+        <td style="text-align: right; border-top: 1px solid #f5f8fa; font-style: italic;">
+            {{ order.totalProductPostTaxes() | raw }}
+        </td>
+    </tr>
+
+    {% partial 'mallPDF/order/discounts' discounts=order.discounts %}
+    {% partial 'mallPDF/order/shipping' shipping=order.shipping %}
+
+    {% if order.payment and order.payment.total > 0 %}
+        <tr class="orderfooter separator">
+            <td colspan="3">
+                {{ order.payment_method.fee_label | default(order.payment_method.name) }}
+            </td>
+            <td style="text-align: right">
+                {{ order.payment.total | money | raw }}
+            </td>
+        </tr>
+    {% endif %}
+
+    <tr class="orderfooter-bottomline">
+        <td colspan="3" style=" border-top: 1px solid #f5f8fa; font-weight: bold;">
+            {{ 'offline.mall::lang.order.grand_total' | trans }}
+        </td>
+        <td style="text-align: right; border-top: 1px solid #f5f8fa; font-weight: bold;">
+            {{ order.totalPostTaxes() | raw }}
+        </td>
+    </tr>
+
+    {% partial 'mallPDF/order/taxes' taxes=order.taxes %}
+
+    </tbody>
+</table>

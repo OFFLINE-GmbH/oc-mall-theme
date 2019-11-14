@@ -1,0 +1,11 @@
+{% for entry in discounts %}
+    <tr class="orderdiscount">
+        <td colspan="3">
+            {{ 'offline.mall::lang.common.discount' | trans }}:
+            {{ entry.discount.name }}
+        </td>
+        <td style="text-align: right">
+            {{ entry.savings_formatted }}
+        </td>
+    </tr>
+{% endfor %}

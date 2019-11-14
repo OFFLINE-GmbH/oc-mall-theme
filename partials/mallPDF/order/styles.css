@@ -1,0 +1,23 @@
+html {
+    margin: 1.5cm;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 11pt;
+    line-height: 1.4;
+}
+
+table {
+    margin: 1cm 0;
+}
+
+table td {
+    padding: .2cm 0;
+}
+
+p {
+    margin-bottom: .5cm;
+}

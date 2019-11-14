@@ -1,0 +1,10 @@
+{% for entry in taxes %}
+    <tr class="orderfooter orderfooter-taxes separator">
+        <td colspan="3" style="font-size: 80%; color: #666">
+            {{ entry.tax.name }} ({{ entry.tax.percentage }} %)
+        </td>
+        <td style="text-align: right; font-size: 80%; color: #666">
+            {{ entry.total_formatted }}
+        </td>
+    </tr>
+{% endfor %}

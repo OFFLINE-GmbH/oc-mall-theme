@@ -28,6 +28,9 @@
     &__actions {
         text-align: right;
         @apply .mt-8;
+        .mall-btn {
+            @apply .ml-4;
+        }
     }
     .mall-trash-icon {
         width: 14px;

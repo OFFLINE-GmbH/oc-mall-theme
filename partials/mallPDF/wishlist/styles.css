@@ -1,0 +1,60 @@
+html {
+    margin: 1.5cm;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 11pt;
+    line-height: 1.4;
+}
+
+table {
+    width: 100%;
+    margin: 1cm 0;
+}
+
+table td {
+    padding: .2cm 0;
+}
+
+p {
+    margin-bottom: .5cm;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-muted {
+    font-size: 10pt;
+    color: #777;
+}
+
+.mall-cart__header th {
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    padding-bottom: .25cm;
+}
+
+.mall-cart__total td {
+    background: #fefefe;
+    font-weight: bold;
+    border-top: 1px solid #000;
+}
+
+.mall-cart__grand-total td {
+    background: #fefefe;
+    font-weight: bold;
+    border-top: 1px solid #000;
+}
+
+.mall-cart__taxes td {
+    font-size: 10pt;
+    color: #777;
+}
+
+.mall-cart__product td {
+    border-top: 1px solid #777;
+}
