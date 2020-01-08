@@ -8,13 +8,6 @@ localeUrl[en] = "/cart"
 
 [cart]
 showTaxes = 0
+showProceedToCheckoutButton = 1
 ==
 {% component 'cart' %}
-
-{% if cart.products.count > 0 %}
-    <div class="mall-cart-actions">
-        <a href="{{ 'checkout' | page }}" class="mall-btn mall-btn--primary">
-            {{ 'offline.mall::frontend.checkout.begin' | trans }}
-        </a>
-    </div>
-{% endif %}
