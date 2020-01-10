@@ -9,6 +9,6 @@
     </tbody>
     <tfoot>
     {% partial 'cart::table/total'      totals=wishlist.totals %}
-    {% partial 'cart::table/taxes'      taxes=wishlist.totals.taxes %}
+    {% partial 'cart::table/taxes'      totals=wishlist.totals %}
     </tfoot>
 </table>
