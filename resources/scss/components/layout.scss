@@ -1,0 +1,10 @@
+.mall-three-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .mall-column {
+        flex-shrink: 0;
+        width: 33%;
+        margin-bottom: 1rem;
+    }
+}

@@ -42,6 +42,14 @@
         @apply .mb-8;
     }
 
+    &__properties {
+        @apply .text-sm .mb-8;
+    }
+
+    &__properties-heading {
+        @apply .mt-8 .pb-2 .border-b .border-grey-light;
+    }
+
     &__custom-fields {
         @apply .mb-8;
         .mall-option-selector {
