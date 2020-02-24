@@ -1,0 +1,32 @@
+.mall-switcher__outer {
+    display: inline-block;
+}
+
+.mall-switcher {
+    display: flex;
+}
+
+.mall-switcher__item {
+    display: flex;
+    flex-grow: 1;
+    padding: 0.5rem 2rem;
+    font-weight: 400;
+    white-space: nowrap;
+    border: #efefef 1px solid;
+    border-left-width: 0;
+    text-decoration: none;
+}
+
+.mall-switcher__item:hover,
+.mall-switcher__item--active {
+    background: #eee;
+}
+
+.mall-switcher__item:first-child {
+    border-left-width: 1px;
+    border-radius: 4px 0 0 4px;
+}
+
+.mall-switcher__item:last-child {
+    border-radius: 0 4px 4px 0;
+}
