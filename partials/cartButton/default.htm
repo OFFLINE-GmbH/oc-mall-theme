@@ -25,15 +25,12 @@
 {% put scripts %}
     <script>
         $(function () {
-            var baseCount = '{{ count }}';
             var $count = $('.mall-cart-count');
-            $.subscribe('mall.cart.productAdded', function () {
-                $count.removeClass('invisible').text(++ baseCount).show();
+            $.subscribe('mall.cart.productAdded', function (e, data) {
+                $count.removeClass('invisible').text(data.new_items_count).show();
             });
-            $.subscribe('mall.cart.productRemoved', function () {
-                baseCount --;
-                if (baseCount < 0) baseCount = 0;
-                $count.text(baseCount);
+            $.subscribe('mall.cart.productRemoved', function (e, data) {
+                $count.text(data.new_items_count);
             });
         });
     </script>

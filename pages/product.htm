@@ -10,10 +10,36 @@ localeUrl[en] = "/product/:slug/:variant?"
 product = ":slug"
 variant = ":slug"
 
+[products relatedProducts]
+setPageTitle = 0
+includeVariants = 1
+includeChildren = 0
+perPage = 4
+paginate = 0
+sort = "random"
 [wishlistButton]
 ==
-{% component 'product' %}
+use OFFLINE\Mall\Models\Category;
 
+function onStart() {
+    // Fetch the category from the product component.
+    $productComponent = $this->findComponentByName('product');
+    $item = optional($productComponent)->item;
+    if (!$item) {
+        return;
+    }
+    $category = optional($item->categories)->first();
+    if (!$category) {
+        return;
+    }
+    // If a category is available, use it for the products component.
+    $this->findComponentByName('relatedProducts')->category = $category;
+}
+==
+
+{% component 'product' %}
+<h2>Other products from this category</h2>
+{% component 'relatedProducts' %}
 {% put styles %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.css">
 {% endput %}
