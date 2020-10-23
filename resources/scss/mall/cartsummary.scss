@@ -7,6 +7,11 @@
                 @apply .pr-8;
             }
         }
+        &--two-columns {
+            > * {
+                @apply .w-1/2;
+            }
+        }
     }
     &__heading {
         @apply .border-b .border-smoke .pb-1 .mb-2;

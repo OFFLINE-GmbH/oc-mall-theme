@@ -8,11 +8,7 @@ localeUrl[en] = "/checkout/:step?"
 
 [signUp]
 
-[checkout]
+[quickCheckout]
 step = "{{ :step }}"
 ==
-{% if not user %}
-    {% component 'signUp' %}
-{% else %}
-    {% component 'checkout' %}
-{% endif %}
+{% component 'quickCheckout' %}
