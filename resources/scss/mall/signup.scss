@@ -1,31 +1,31 @@
 .mall-signup {
-    @apply .flex .w-4/5 .m-auto;
+    @apply flex w-4/5 m-auto;
     &__signup,
     &__signin {
-        @apply .w-1/2 .border .border-smoke-light .rounded .p-8 .self-start;
+        @apply w-1/2 border border-smoke-light rounded p-8 self-start;
     }
     &__heading {
-        @apply .mb-6 .leading-normal;
+        @apply mb-6 leading-normal;
     }
     &__subheading {
-        @apply .mb-4 .mt-2 .leading-normal;
+        @apply mb-4 mt-2 leading-normal;
     }
     &__signin {
-        @apply .mr-4;
+        @apply mr-4;
     }
     &__signup {
-        @apply .ml-4;
+        @apply ml-4;
     }
     &__guest-option {
-        @apply .mb-8 .-mt-2;
+        @apply mb-8 -mt-2;
     }
     &__shipping-address-option {
-        @apply .mb-8 .-mt-2;
+        @apply mb-8 -mt-2;
     }
     .mall-form-actions .mall-btn--primary {
-        @apply .text-base;
+        @apply text-base;
     }
     &-terms {
-        @apply .bg-grey-lighter .p-6 .rounded .border .border-grey-light;
+        @apply bg-grey-lighter p-6 rounded border border-grey-light;
     }
 }

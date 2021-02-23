@@ -1,26 +1,26 @@
 .mall-my-account {
-    @apply .flex;
+    @apply flex;
     &__nav {
-        @apply .w-1/5;
+        @apply w-1/5;
     }
     &__content {
-        @apply .w-4/5 .pl-8;
+        @apply w-4/5 pl-8;
         h2 {
-            @apply .mb-8;
+            @apply mb-8;
         }
     }
     &__nav-item {
-        @apply .py-3 .px-2 .text-black .cursor-pointer;
+        @apply py-3 px-2 text-black cursor-pointer;
         a {
-            @apply .text-grey-dark .no-underline .block;
+            @apply text-grey-dark no-underline block;
         }
         &:hover:not(.mall-my-account__nav-item--active) {
-            @apply .bg-smoke-lightest;
+            @apply bg-smoke-lightest;
         }
         &--active {
-            @apply .bg-smoke;
+            @apply bg-smoke;
             a {
-                @apply .text-black;
+                @apply text-black;
             }
         }
     }

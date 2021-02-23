@@ -8,24 +8,24 @@
     }
 
     &__cart-column {
-        @apply .border-l .border-grey-lighter;
+        @apply border-l border-grey-lighter;
         flex: 1;
         padding-left: 2rem;
     }
 
     &__collapsible {
-        @apply .border .border-grey-light .rounded .shadow;
+        @apply border border-grey-light rounded shadow;
         &-header {
-            @apply .p-8 .flex .items-center;
+            @apply p-8 flex items-center;
         }
         &-element {
-            @apply .border-b .border-grey-light;
-            &:hover:not(.mall-quick-checkout__collapsible-element--open) {
-                @apply .bg-grey-lightest .cursor-pointer;
+            @apply border-b border-grey-light;
+            &:hover:not(mall-quick-checkout__collapsible-element--open) {
+                @apply bg-grey-lightest cursor-pointer;
             }
         }
         &-inner {
-            @apply  .pb-4 .px-8;
+            @apply  pb-4 px-8;
         }
         &-element--open {
             cursor: initial;
@@ -37,28 +37,28 @@
             }
         }
         &-summary {
-            @apply .text-grey-dark .ml-4 .text-sm;
+            @apply text-grey-dark ml-4 text-sm;
         }
         &-content {
-            @apply .overflow-hidden;
-            transition: max-height .2s ease-out;
+            @apply overflow-hidden;
+            transition: max-height 2s ease-out;
             max-height: 0;
         }
         .mall-quick-checkout__heading {
-            @apply .p-0 .m-0;
+            @apply p-0 m-0;
         }
     }
 
     &__heading {
-        @apply .text-base .text-grey-darkest .uppercase;
+        @apply text-base text-grey-darkest uppercase;
     }
 
     &__sign-in-link {
-        @apply .text-grey-dark .mb-4 .-mt-2 .text-sm;
+        @apply text-grey-dark mb-4 -mt-2 text-sm;
     }
 
     &__payment-method-form > div {
-        @apply .mt-4;
+        @apply mt-4;
     }
 
     .mall-cart {
@@ -66,30 +66,30 @@
             border: none;
         }
         &__table td {
-            @apply .px-0 .py-2;
+            @apply px-0 py-2;
         }
     }
 
     &__actions {
-        @apply .mt-4;
+        @apply mt-4;
     }
 
     .mall-btn-checkout {
-        @apply .text-lg .font-bold .uppercase .w-full;
+        @apply text-lg font-bold uppercase w-full;
     }
 
     &__shipping-address-option {
-        @apply .mb-0 .mt-2;
+        @apply mb-0 mt-2;
     }
 
     &__guest-option {
-        @apply .mb-6 .-mt-1;
+        @apply mb-6 -mt-1;
     }
 
     &__toggle-option {
         display: flex;
         justify-content: space-between;
-        @apply .text-sm .text-grey-dark .border-grey-light .cursor-pointer .no-underline;
+        @apply text-sm text-grey-dark border-grey-light cursor-pointer no-underline;
         &-logo {
             width: 75px;
             flex: 0 0 75px;
@@ -105,11 +105,11 @@
 
         &-text {
             flex: 1 1 auto;
-            @apply .py-4;
+            @apply py-4;
         }
 
         &-price {
-            @apply .font-bold .mt-1;
+            @apply font-bold mt-1;
         }
 
         .mall-selection-indicator {
@@ -117,38 +117,38 @@
         }
 
         &:hover .mall-selection-indicator:not(.mall-selection-indicator--active) {
-            @apply .text-grey-dark;
+            @apply text-grey-dark;
         }
     }
 
     .mall-form-control {
-        @apply .mb-4 .w-full;
+        @apply mb-4 w-full;
         input, textarea {
-            @apply .mall-input-sm .text-sm;
+            @apply mall-input-sm text-sm;
         }
 
         select {
-            @apply .mall-selectbox-sm .w-full .text-sm;
+            @apply mall-selectbox-sm w-full text-sm;
         }
     }
 
     .mall-two-fields {
-        @apply .mb-4;
-        .mall-form-control {
+        @apply mb-4;
+        mall-form-control {
             margin-bottom: 0;
         }
     }
     .mall-address-form--shipping {
-        @apply .mt-4;
+        @apply mt-4;
     }
 
     .mall-signup-terms {
-        @apply .my-8;
+        @apply my-8;
     }
 }
 
 .mall-selection-indicator {
-    @apply .bg-grey-lighter .text-grey-lighter .py-4 .font-bold;
+    @apply bg-grey-lighter text-grey-lighter py-4 font-bold;
     width: 32px;
     height: 32px;
     line-height: 1;
@@ -159,6 +159,6 @@
     justify-content: center;
 
     &--active {
-        @apply .bg-blue-darker;
+        @apply bg-blue-darker;
     }
 }

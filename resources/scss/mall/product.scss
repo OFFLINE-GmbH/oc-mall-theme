@@ -1,64 +1,64 @@
 .mall-product {
-    @apply .flex;
+    @apply flex;
     &__info {
-        @apply .w-3/5 .pr-8;
+        @apply w-3/5 pr-8;
     }
 
     &__description {
-        @apply .mb-8;
+        @apply mb-8;
     }
 
     &__images {
-        @apply .flex .flex-wrap;
+        @apply flex flex-wrap;
     }
 
     &__image {
-        @apply .border-2 .border-grey-light .mr-4 .mb-4 .p-2 .flex;
+        @apply border-2 border-grey-light mr-4 mb-4 p-2 flex;
         width: calc(100% / 3 - 1rem);
 
         &:nth-child(3n) {
-            @apply .mr-0;
+            @apply mr-0;
         }
 
         img {
-            @apply .block;
+            @apply block;
             object-fit: contain;
         }
     }
 
     &__cart {
-        @apply .w-1/4 .pl-8 .ml-auto;
+        @apply w-1/4 pl-8 ml-auto;
     }
 
     &__variants {
-        @apply .flex .mb-8;
+        @apply flex mb-8;
     }
 
     &__variants-heading {
-        @apply .mb-4;
+        @apply mb-4;
     }
 
     &__variant-properties {
-        @apply .mb-8;
+        @apply mb-8;
     }
 
     &__properties {
-        @apply .text-sm .mb-8;
+        @apply text-sm mb-8;
     }
 
     &__properties-heading {
-        @apply .mt-8 .pb-2 .border-b .border-grey-light;
+        @apply mt-8 pb-2 border-b border-grey-light;
     }
 
     &__custom-fields {
-        @apply .mb-8;
+        @apply mb-8;
         .mall-option-selector {
-            @apply .border-2 .border-grey-light .inline-block;
+            @apply border-2 border-grey-light inline-block;
             width: 24px;
             height: 24px;
 
-            &.is-active {
-                @apply .border-grey-dark .shadow;
+            &is-active {
+                @apply border-grey-dark shadow;
             }
 
             img {
@@ -68,34 +68,34 @@
     }
 
     &__price {
-        @apply .border-t .border-smoke-light .pt-8;
+        @apply border-t border-smoke-light pt-8;
     }
 
     &__old-price {
-        @apply .text-sm .font-bold .text-red .line-through .mb-1;
+        @apply text-sm font-bold text-red line-through mb-1;
     }
 
     &__current-price {
-        @apply .text-2xl .font-bold .text-black;
+        @apply text-2xl font-bold text-black;
     }
 
     &__tax-info {
-        @apply .text-xs .text-grey .mt-2 .mb-4;
+        @apply text-xs text-grey mt-2 mb-4;
     }
 
     &__property-stock {
-        @apply .text-xs .mt-2 .mb-8 .text-grey;
+        @apply text-xs mt-2 mb-8 text-grey;
     }
 
     &__add-to-cart-form {
-        @apply .border-t .border-smoke-light .pt-8;
+        @apply border-t border-smoke-light pt-8;
     }
 }
 
 .mall-add-to-cart-button {
-    @apply .mall-btn .w-full .block .bg-blue .border-blue-dark .text-white .shadow-md .py-3 .text-base .mt-4 .uppercase .font-bold;
-    transition: .1s ease background;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+    @apply mall-btn w-full block bg-blue border-blue-dark text-white shadow-md py-3 text-base mt-4 uppercase font-bold;
+    transition: 1s ease background;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 3);
 
     &:hover {
         background: lighten(#3490dc, 5);
@@ -103,14 +103,14 @@
 }
 
 .mall-color-swatches {
-    @apply .flex .justify-start;
+    @apply flex justify-start;
     &__swatch {
         width: 24px;
         height: 24px;
         margin-right: 6px;
-        @apply .border-2;
-        &.is-active {
-            @apply .border-primary;
+        @apply border-2;
+        &is-active {
+            @apply border-primary;
         }
     }
 }
@@ -123,11 +123,11 @@
         margin-bottom: 1rem;
     }
     &__description {
-        @apply .text-grey-darkest .text-sm;
+        @apply text-grey-darkest text-sm;
         margin-bottom: 1rem;
     }
     &__required {
-        @apply .text-blue-darker .text-sm;
+        @apply text-blue-darker text-sm;
         margin-bottom: 1rem;
         &[data-validate-for] {
             margin-left: 0;
@@ -136,11 +136,11 @@
 }
 
 .mall-product-service-options {
-    @apply .border-b .border-grey-light;
+    @apply border-b border-grey-light;
 }
 
 .mall-product-service-option {
-    @apply .border-t .border-grey-light .text-grey-darkest .text-sm;
+    @apply border-t border-grey-light text-grey-darkest text-sm;
     display: flex;
     flex-wrap: wrap;
     padding: 15px 0;
@@ -156,8 +156,8 @@
         font-weight: bold;
     }
     &__description {
-        @apply .text-grey-darker .text-xs;
-        margin-top: .5rem;
+        @apply text-grey-darker text-xs;
+        margin-top: 5rem;
         padding-left: 40px;
         padding-right: 100px;
         flex: 1 0 100%;
@@ -165,7 +165,7 @@
 }
 
 .mall-product-service-error {
-    @apply .text-sm .bg-red-lightest .p-4 .rounded .text-center;
+    @apply text-sm bg-red-lightest p-4 rounded text-center;
     margin-left: 0;
     margin-top: 2rem;
 }

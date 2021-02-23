@@ -1,88 +1,88 @@
 .mall-cart {
     &__wrapper {
-        @apply .border-t .border-b .border-grey-light .overflow-hidden .relative;
+        @apply border-t border-b border-grey-light overflow-hidden relative;
     }
     &__table {
-        @apply .w-full .text-left;
+        @apply w-full text-left;
         border-collapse: collapse;
     }
     &__header th {
-        @apply .text-sm .font-semibold .text-grey-darker .p-2 .bg-grey-lightest;
+        @apply text-sm font-semibold text-grey-darker p-2 bg-grey-lightest;
     }
     &__product td {
-        @apply .p-2 .border-t .text-xs .whitespace-no-wrap .leading-normal;
+        @apply p-2 border-t border-smoke text-xs whitespace-nowrap leading-normal;
         &:first-child {
-            @apply .border-smoke .w-32;
+            @apply w-32;
         }
         a {
-            @apply .no-underline .text-grey-darkest;
+            @apply no-underline text-grey-darkest;
         }
         .js-mall-remove-product {
-            @apply .underline .text-primary;
+            @apply underline text-primary;
         }
     }
     &__payment td,
     &__discount td,
     &__shipping td {
-        @apply .p-2 .border-t .text-xs .whitespace-no-wrap;
+        @apply p-2 border-t border-smoke text-xs whitespace-nowrap;
     }
     &__taxes {
         td {
-            @apply .p-2 .border-t .text-2xs .whitespace-no-wrap .text-grey-dark .border-smoke-light;
+            @apply p-2 border-t text-2xs whitespace-nowrap text-grey-dark border-smoke-light;
         }
         &--1 td {
-            @apply .border-smoke;
+            @apply border-smoke;
         }
     }
     &__taxes-total td {
-        @apply .p-2 .border-t .text-2xs .whitespace-no-wrap .text-grey-dark .border-smoke;
+        @apply p-2 border-t text-2xs whitespace-nowrap text-grey-dark border-smoke;
     }
     &__total td {
-        @apply .p-2 .bg-grey-lightest .text-grey-darker .font-semibold .border-t .border-smoke .text-xs;
+        @apply p-2 bg-grey-lightest text-grey-darker font-semibold border-t border-smoke text-xs;
     }
     &__grand-total td {
-        @apply .p-2 .bg-grey-lightest .text-grey-darker .font-semibold .border-t .border-smoke .text-sm;
+        @apply p-2 bg-grey-lightest text-grey-darker font-semibold border-t border-smoke text-sm;
     }
     &__empty {
-        @apply .p-6 .bg-smoke-light .text-center .w-1/2 .m-auto;
+        @apply p-6 bg-smoke-light text-center w-1/2 m-auto;
     }
     &__services td {
-        @apply .px-2 .py-1 .bg-grey-lightest .text-grey-darker .text-xs;
+        @apply px-2 py-1 bg-grey-lightest text-grey-darker text-xs;
     }
     &__services--first td {
-        @apply .border-t .border-smoke .pt-2;
+        @apply border-t border-smoke pt-2;
     }
     &__services--last td {
-        @apply .pb-2;
+        @apply pb-2;
     }
     &__price-additions {
-        @apply .text-grey-dark;
+        @apply text-grey-dark;
         font-style: italic;
     }
 }
 
 .mall-cart-actions {
-    @apply .mt-8 .pt-8 .border-t .border-smoke-light .text-right;
+    @apply mt-8 pt-8 border-t border-smoke-light text-right;
     .mall-btn {
-        @apply .text-base;
+        @apply text-base;
     }
 }
 
 .mall-discount-applier {
-    @apply .mt-8 .w-full .flex .justify-end;
+    @apply mt-8 w-full flex justify-end;
     form {
-        @apply .w-1/2 .flex .items-end;
+        @apply w-1/2 flex items-end;
     }
     .mall-form-control {
-        @apply .flex-grow .mb-0;
+        @apply flex-grow mb-0;
         input {
-            @apply .mb-0 .py-2 .text-sm;
+            @apply mb-0 py-2 text-sm;
         }
     }
     .mall-btn {
-        @apply .flex-shrink .ml-2 .py-2;
+        @apply flex-shrink ml-2 py-2;
     }
     [data-validate-for] {
-        @apply .absolute;
+        @apply absolute;
     }
 }

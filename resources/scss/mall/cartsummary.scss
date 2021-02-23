@@ -1,33 +1,33 @@
 .mall-cart-summary {
     &__info {
-        @apply .flex .justify-between .text-xs .leading-normal .mb-8;
+        @apply flex justify-between text-xs leading-normal mb-8;
         > * {
-            @apply .w-1/4;
+            @apply w-1/4;
             &:not(:last-child) {
-                @apply .pr-8;
+                @apply pr-8;
             }
         }
         &--two-columns {
             > * {
-                @apply .w-1/2;
+                @apply w-1/2;
             }
         }
     }
     &__heading {
-        @apply .border-b .border-smoke .pb-1 .mb-2;
+        @apply border-b border-smoke pb-1 mb-2;
     }
     &__method-logo {
-        @apply .max-w-full .pt-4;
+        @apply max-w-full pt-4;
         min-height: 140px;
     }
     a {
-        @apply .text-black;
+        @apply text-black;
     }
     .mall-address {
-        @apply .flex .justify-between .flex-col;
+        @apply flex justify-between flex-col;
         min-height: 160px;
         &__actions {
-            @apply .mt-8;
+            @apply mt-8;
         }
     }
 }

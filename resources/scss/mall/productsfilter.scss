@@ -1,52 +1,52 @@
 .mall-products-filter {
-    @apply .pr-8;
+    @apply pr-8;
     .mall-property-group {
-        @apply .mb-8;
+        @apply mb-8;
         min-height: 105px; // Prevent jumping heights when the range filter is loaded
         &__name {
-            @apply .border-b .border-smoke .pb-1 .mb-4;
+            @apply border-b border-smoke pb-1 mb-4;
             &--price {
-                @apply .flex;
+                @apply flex;
                 & > div {
-                    @apply .flex-1;
+                    @apply flex-1;
                 }
             }
         }
         &__description {
-            @apply .text-xs .text-grey-dark .mb-4 .-mt-2;
+            @apply text-xs text-grey-dark mb-4 -mt-2;
         }
     }
     .mall-property {
-        @apply .mb-2;
+        @apply mb-2;
         &:not(:last-child) .mall-filter.mall-filter--range {
             margin-bottom: 4rem;
         }
         &__label {
-            @apply .text-sm .mb-2 .flex;
+            @apply text-sm mb-2 flex;
             & > div {
-                @apply .flex-1;
+                @apply flex-1;
             }
         }
         &__clear-filter {
-            @apply .text-xs .font-normal .justify-end .text-right;
+            @apply text-xs font-normal justify-end text-right;
             a {
-                @apply .text-grey .no-underline;
+                @apply text-grey no-underline;
             }
         }
     }
     .mall-filter {
-        @apply .flex .flex-wrap;
+        @apply flex flex-wrap;
         &__option {
-            @apply .p-2 .mr-2 .mb-2 .bg-smoke .cursor-pointer .text-center .text-sm;
+            @apply p-2 mr-2 mb-2 bg-smoke cursor-pointer text-center text-sm;
             min-width: 40px;
             &--selected:not(.mall-label--checkbox) {
-                @apply .bg-primary .text-white;
+                @apply bg-primary text-white;
             }
         }
     }
     .noUi {
         &-connect {
-            @apply .bg-primary;
+            @apply bg-primary;
         }
         &-horizontal {
             height: 10px;
