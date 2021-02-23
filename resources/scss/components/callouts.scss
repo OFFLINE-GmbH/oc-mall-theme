@@ -1,6 +1,6 @@
 .mall-callout {
-    @apply .px-4 .py-6 .bg-yellow-lightest .text-yellow-darkest .mb-8 .text-sm .text-center;
+    @apply px-4 py-6 bg-yellow-lightest text-yellow-darkest mb-8 text-sm text-center;
     &--neutral {
-        @apply .bg-grey-lightest .text-grey-darkest;
+        @apply bg-grey-lightest text-grey-darkest;
     }
 }

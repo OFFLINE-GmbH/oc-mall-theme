@@ -1,19 +1,19 @@
 .mall-checkout-result {
-    @apply .w-1/2 .m-auto .p-8 .rounded .shadow-md .text-center;
+    @apply w-1/2 m-auto p-8 rounded shadow-md text-center;
     &--failed {
-        @apply .bg-red-lightest .border .border-red-light .text-red-darkest;
+        @apply bg-red-lightest border border-red-light text-red-darkest;
     }
     &--cancelled {
-        @apply .bg-orange-lightest .border .border-orange-light .text-orange-darkest;
+        @apply bg-orange-lightest border border-orange-light text-orange-darkest;
     }
     &__heading {
-        @apply .mb-4;
+        @apply mb-4;
     }
     &__actions {
-        @apply .mt-8;
+        @apply mt-8;
     }
     p {
-        @apply .mb-4;
+        @apply mb-4;
     }
 }
 

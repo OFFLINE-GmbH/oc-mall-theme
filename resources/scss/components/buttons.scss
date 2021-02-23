@@ -1,46 +1,46 @@
 .mall-btn {
-    @apply .text-sm .inline .bg-white .text-grey-darkest .py-3 .px-6 .border .border-grey-light .rounded .shadow .text-center .cursor-pointer .no-underline;
+    @apply text-sm inline bg-white text-grey-darkest py-3 px-6 border border-grey-light rounded shadow text-center cursor-pointer no-underline;
     white-space: nowrap;
     min-height: 42px;
     &:hover {
-        @apply .bg-grey-lighter;
+        @apply bg-grey-lighter;
     }
     &--primary {
-        @apply .bg-primary .border-primary-light .text-white;
+        @apply bg-primary border-primary-light text-white;
         &:hover {
-            @apply .bg-primary-light;
+            @apply bg-primary-light;
         }
     }
     &--secondary {
-        @apply .bg-secondary .border-secondary-light .text-white;
+        @apply bg-secondary border-secondary-light text-white;
         &:hover {
-            @apply .bg-secondary-light;
+            @apply bg-secondary-light;
         }
     }
     &--link {
-        @apply .inline-block .align-baseline .font-bold .text-sm .text-blue .shadow-none .border-0;
+        @apply inline-block align-baseline font-bold text-sm text-blue shadow-none border-0;
         &:hover {
-            @apply .text-blue-darker .bg-transparent;
+            @apply text-blue-darker bg-transparent;
         }
     }
     &--text {
-        @apply .inline-block .align-baseline .text-sm .text-grey .shadow-none .border-0 .p-0 .m-0 .text-xs;
+        @apply inline-block align-baseline text-sm text-grey shadow-none border-0 p-0 m-0 text-xs;
         &:hover {
-            @apply .text-blue-darker .bg-transparent;
+            @apply text-blue-darker bg-transparent;
         }
     }
     &--full {
-        @apply .w-full;
+        @apply w-full;
     }
     &--disabled, &[disabled] {
-        @apply .bg-grey .border-grey-dark;
+        @apply bg-grey border-grey-dark;
         cursor: no-drop;
         &:hover {
-            @apply .bg-grey;
+            @apply bg-grey;
         }
     }
     &--sm {
-        @apply .py-2 .px-4 .text-xs;
+        @apply py-2 px-4 text-xs;
         min-height: 0;
     }
 }
