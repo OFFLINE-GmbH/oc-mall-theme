@@ -1,0 +1,8 @@
+{
+    "name": "offline/mall-theme",
+    "type": "october-theme",
+    "description": "Example implementation of oc-mall-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
