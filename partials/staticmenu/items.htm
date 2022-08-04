@@ -1,21 +1,23 @@
 {% for item in items if not item.viewBag.isHidden %}
-    <div class="block mt-4 {{ isSubnav ? 'block' : 'lg:inline-block mr-8' }} lg:mt-0 {{ item.items ? 'has-children' : '' }}">
-        {% if item.url %}
-            <a role="presentation" href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }}
-               class="text-grey-dark no-underline hover:text-grey-darker
-            {{ isSubnav ? 'px-4 py-2 block' }}
-            {{ item.isActive ? 'active' : '' }}
-            {{ item.isChildActive ? 'child-active' : '' }}
-            {{ item.viewBag.cssClass }}">
-                {{ item.title }}
-            </a>
-        {% else %}
-            <span class="text-grey-dark no-underline hover:text-grey-darker">{{ item.title }}</span>
-        {% endif %}
-        {% if item.items %}
-            <div class="absolute hidden shadow py-2 bg-white text-left rounded-sm -ml-4 z-30 max-w-sm">
-                {% partial __SELF__ ~ "::items" items=item.items isSubnav=true %}
-            </div>
-        {% endif %}
-    </div>
+    {% if not item.viewBag.isHidden %}
+        <div class="block mt-4 {{ isSubnav ? 'block' : 'lg:inline-block mr-8' }} lg:mt-0 {{ item.items ? 'has-children' : '' }}">
+            {% if item.url %}
+                <a role="presentation" href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }}
+                   class="text-grey-dark no-underline hover:text-grey-darker
+                {{ isSubnav ? 'px-4 py-2 block' }}
+                {{ item.isActive ? 'active' : '' }}
+                {{ item.isChildActive ? 'child-active' : '' }}
+                {{ item.viewBag.cssClass }}">
+                    {{ item.title }}
+                </a>
+            {% else %}
+                <span class="text-grey-dark no-underline hover:text-grey-darker">{{ item.title }}</span>
+            {% endif %}
+            {% if item.items %}
+                <div class="absolute hidden shadow py-2 bg-white text-left rounded-sm -ml-4 z-30 max-w-sm">
+                    {% partial __SELF__ ~ "::items" items=item.items isSubnav=true %}
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
 {% endfor %}
