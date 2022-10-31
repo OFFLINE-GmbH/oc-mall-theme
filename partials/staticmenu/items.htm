@@ -1,4 +1,4 @@
-{% for item in items if not item.viewBag.isHidden %}
+{% for item in items %}
     {% if not item.viewBag.isHidden %}
         <div class="block mt-4 {{ isSubnav ? 'block' : 'lg:inline-block mr-8' }} lg:mt-0 {{ item.items ? 'has-children' : '' }}">
             {% if item.url %}
