@@ -1,9 +1,9 @@
 .mall-selectbox {
-    @apply .appearance-none .bg-grey-lighter .border .border-grey-lighter .text-sm .text-grey-darker .py-3 .px-2 .pr-8 .rounded  .dropdown-pointer;
+    @apply appearance-none bg-grey-lighter border border-grey-lighter text-sm text-grey-darker py-3 px-2 pr-8 rounded dropdown-pointer;
 }
 
 .mall-selectbox-sm {
-    @apply .mall-selectbox .py-1 .px-1 .dropdown-pointer;
+    @apply mall-selectbox py-1 px-1 dropdown-pointer;
     padding-right: 2rem;
     background-size: 1.2em 1.2em;
     background-position: right .75em top 50%;
@@ -11,14 +11,14 @@
 }
 
 .mall-label {
-    @apply .block .uppercase .tracking-wide .text-grey-darker .text-xs .font-bold .mb-2;
+    @apply block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2;
 }
 
 .mall-input {
-    @apply .appearance-none .block .w-full .bg-grey-lighter .text-grey-darker .border .border-grey-lighter .rounded .py-3 .px-4 .mb-3;
+    @apply appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3;
     min-height: 42.6px;
     &-sm {
-        @apply .py-2 .px-3;
+        @apply py-2 px-3;
         min-height: 0;
     }
     &--width-limited {
@@ -27,15 +27,15 @@
 }
 
 .has-error .mall-input {
-    @apply .bg-red-lightest;
+    @apply bg-red-lightest;
 }
 
 .has-error .mall-label {
-    @apply .text-red-dark;
+    @apply text-red-dark;
 }
 
 [data-validate-for] {
-    @apply .text-red-dark .text-xs .ml-1 .mt-2;
+    @apply text-red-dark text-xs ml-1 mt-2;
 }
 
 .is-required label::after {
@@ -53,20 +53,20 @@
 }
 
 .mall-form-control {
-    @apply .mb-6 .w-full;
+    @apply mb-6 w-full;
     label {
-        @apply .mall-label;
+        @apply mall-label;
     }
     input, textarea {
-        @apply .mall-input;
+        @apply mall-input;
     }
     select {
-        @apply .mall-selectbox .w-full .cursor-pointer;
+        @apply mall-selectbox w-full cursor-pointer;
     }
 }
 
 .mall-form-checkbox {
-    @apply .mb-6 .w-full;
+    @apply mb-6 w-full;
     input[type="checkbox"] {
         margin-right: 4px;
         position: relative;
@@ -75,40 +75,40 @@
 }
 
 .mall-form-actions {
-    @apply .flex .items-center .justify-start .mt-6;
+    @apply flex items-center justify-start mt-6;
     .mall-btn + .mall-btn {
-        @apply .ml-4;
+        @apply ml-4;
     }
 }
 
 .mall-two-fields {
-    @apply .flex;
+    @apply flex;
     margin-bottom: 1.5rem;
     .mall-form-control, input {
         margin-bottom: 0;
     }
     > :first-child {
         flex: 50% 0;
-        @apply .mr-2;
+        @apply mr-2;
     }
     > :last-child {
         flex: 50% 0;
-        @apply .ml-2;
+        @apply ml-2;
     }
 }
 
 .mall-checkbox {
-    @apply .block .text-grey-dark .font-bold;
+    @apply block text-grey-dark font-bold;
     text-indent: -27px;
     padding-left: 27px;
     > input {
-        @apply .mr-2;
+        @apply mr-2;
     }
     > span {
-        @apply .text-sm;
+        @apply text-sm;
     }
 }
 
 .mall-form-comment {
-    @apply .text-grey .text-xs .mb-4;
+    @apply text-grey text-xs mb-4;
 }

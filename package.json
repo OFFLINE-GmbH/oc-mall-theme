@@ -1,36 +1,25 @@
 {
   "name": "oc-mall-theme",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Official starter theme for the Mall e-commerce plugin",
-  "main": "Gulpfile.js",
-  "dependencies": {
-    "gulp-plumber": "^1.2.1"
-  },
+  "author": "Tobias Kuendig <tobias@offline.swiss>",
+  "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "babel-core": "^6.26.3",
-    "babel-preset-es2015": "^6.24.1",
-    "babelify": "^10.0.0",
-    "browser-sync": "^2.26.3",
-    "browserify": "^16.2.3",
-    "cssnano": "^4.1.8",
-    "gulp": "^4.0.0",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "gulp-streamify": "^1.0.2",
-    "gulp-uglify": "^3.0.1",
-    "gulp-util": "^3.0.8",
-    "postcss": "^7.0.0",
-    "postcss-normalize.css": "^0.4.0",
-    "poststylus": "^1.0.0",
-    "tailwindcss": "^0.7.0",
-    "vinyl-source-stream": "^2.0.0"
+    "autoprefixer": "^10.2.4",
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "laravel-mix": "^6.0.11",
+    "postcss": "^8.2.4",
+    "sass": "^1.32.8",
+    "sass-loader": "^8.0.2",
+    "tailwindcss": "^2.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Tobias Kuendig <tobias@offline.swiss>",
-  "license": "MIT"
+    "dev": "mix",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production"
+  }
 }

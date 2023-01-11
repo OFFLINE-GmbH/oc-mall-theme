@@ -5,16 +5,16 @@
     }
     &__contents {
         flex: 1 1 auto;
-        @apply .bg-grey-lightest .p-8;
+        @apply bg-grey-lightest p-8;
     }
     &__header {
-        @apply .mb-8;
+        @apply mb-8;
     }
     &__well {
-        @apply .bg-white .shadow .rounded .flex-1;
+        @apply bg-white shadow rounded flex-1;
     }
     &__input {
-        @apply .text-lg .border-b .border-grey .px-0 .py-2 .w-full;
+        @apply text-lg border-b border-grey px-0 py-2 w-full;
         background: transparent;
         flex: 1 1 auto;
     }
@@ -27,17 +27,17 @@
     }
     &__actions {
         text-align: right;
-        @apply .mt-8;
+        @apply mt-8;
         .mall-btn {
-            @apply .ml-4;
+            @apply ml-4;
         }
     }
     .mall-trash-icon {
         width: 14px;
-        @apply .text-grey .fill-current;
+        @apply text-grey fill-current;
     }
     .mall-wishlist-empty {
-        @apply .p-4;
+        @apply p-4;
         text-align: center;
     }
 }
@@ -46,7 +46,7 @@
     position: relative;
 
     &__popup {
-        @apply .text-xs;
+        @apply text-xs;
         opacity: 0;
         pointer-events: none;
         transform: translateY(20px);
@@ -59,7 +59,7 @@
         transform: translateY(0px);
     }
     &__popup-inner {
-        @apply .shadow-md .rounded;
+        @apply shadow-md rounded;
         position: absolute;
         bottom: -4px;
         left: 0;
@@ -69,7 +69,7 @@
     }
     &__new {
         border: 1px dashed;
-        @apply .border-grey .px-4 .py-3 .m-4 .rounded;
+        @apply border-grey px-4 py-3 m-4 rounded;
         display: block;
         position: relative;
     }
@@ -79,7 +79,7 @@
         width: 100%;
     }
     &__new-label {
-        @apply .text-grey;
+        @apply text-grey;
         text-align: center;
         position: absolute;
         left: 50%;
@@ -100,7 +100,7 @@
 }
 
 .mall-wishlist-item {
-    @apply .p-4;
+    @apply p-4;
     display: flex;
     cursor: pointer;
     text-decoration: none;
@@ -108,7 +108,7 @@
 
     &:hover,
     &--active {
-        @apply .bg-grey-lightest;
+        @apply bg-grey-lightest;
     }
 
     &__data {
@@ -116,7 +116,7 @@
     }
 
     &__description {
-        @apply .text-grey .mt-1;
+        @apply text-grey mt-1;
     }
 
     &__meta {
@@ -127,5 +127,5 @@
 }
 
 .mall-add-to-wishlist-button {
-    @apply .mt-1;
+    @apply mt-1;
 }
