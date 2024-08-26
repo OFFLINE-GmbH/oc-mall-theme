@@ -10,3 +10,5 @@ require:
 - Rainlab.Location
 - OFFLINE.SiteSearch
 - OFFLINE.Mall
+authorCode: OFFLINE
+code: Mall
