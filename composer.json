@@ -1,5 +1,5 @@
 {
-    "name": "offline/mall-theme",
+    "name": "offline/oc-mall-theme",
     "type": "october-theme",
     "description": "Example implementation of oc-mall-plugin",
     "require": {
