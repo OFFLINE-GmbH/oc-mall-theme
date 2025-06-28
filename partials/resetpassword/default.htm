@@ -2,10 +2,10 @@
     <h2>{{ 'offline.mall::frontend.password_reset.heading' | trans }}</h2>
 
     <div id="partialUserResetForm">
-        {% if __SELF__.code == null %}
-            {% partial __SELF__ ~ '::restore' %}
-        {% else %}
+        {% if __SELF__.canReset() %}
             {% partial __SELF__ ~ '::reset' %}
+        {% else %}
+            {% partial __SELF__ ~ '::restore' %}
         {% endif %}
     </div>
 </div>

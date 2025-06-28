@@ -3,7 +3,7 @@
 </p>
 
 <form
-    data-request="{{ __SELF__ }}::onRestorePassword"
+    data-request="authentication::onRecoverPassword"
     data-request-update="'{{ __SELF__ }}::reset': '#partialUserResetForm'">
     <div class="mall-form-control">
         <label for="userRestoreEmail">{{ 'offline.mall::frontend.form.email' | trans }}</label>
